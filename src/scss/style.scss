@@ -1,5 +1,17 @@
 @import 'colors';
 
+.nav>li>a {
+    position: relative;
+    display: block;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+  width: 1140 px;
+}
+
 html {
     position: relative;
     min-height: 100%;

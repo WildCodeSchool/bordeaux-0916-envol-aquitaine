@@ -4,7 +4,7 @@
     width: 100%;
 /*margin: 60px auto;*/
 height: 400px;
-background: #fff;
+/*background: #fff;*/
 /*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
 }
 
@@ -16,17 +16,18 @@ background: #fff;
 .board .nav-tabs {
     position: relative;
     /* border-bottom: 0; */
-    /* width: 80%;
-    margin: 40px auto;*/
-    margin-bottom:0;
+    width: 100%;
+    /*margin: 40px auto;*/
+    margin-bottom: 0;
     box-sizing: border-box;
     height: 205px;
+    background-image: url(img/background-acti.jpg);
 }
 
 
 .board > div.board-inner{
-    background: #fafafa url(http://subtlepatterns.com/patterns/geometry2.png);
-    background-size: 30%;
+    background-image: url(/img/background-acti.jpg);
+    /*background-size: 30%;*/
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -64,7 +65,7 @@ span.round-tabs{
     border-radius: 100px;
     background: white;
     z-index: 2;
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     text-align: center;
     font-size: 25px;
