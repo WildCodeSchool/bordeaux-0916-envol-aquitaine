@@ -49,7 +49,7 @@ p.narrow{
 }ligne entre les tabs*/
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    color: #555555;
+    color: #000000;
     cursor: default;
     background-color: transparent;
     border: 0;
@@ -71,52 +71,52 @@ span.round-tabs{
 }
 
 span.round-tabs.one{
-    color: rgb(34, 194, 34);border: 2px solid rgb(34, 194, 34);
+    color: rgb(34, 194, 34);border: 2px solid #080808;
 }
 
 li.active span.round-tabs.one{
     background: #fff !important;
-    border: 2px solid #ddd;
+    border: 3px dotted #080808;
     color: rgb(34, 194, 34);
 }
 
 span.round-tabs.two{
-    color: #febe29;border: 2px solid #febe29;
+    color: #febe29;border: 2px solid #080808;
 }
 
 li.active span.round-tabs.two{
     background: #fff !important;
-    border: 2px solid #ddd;
+    border: 3px dotted #080808;
     color: #febe29;
 }
 
 span.round-tabs.three{
-    color: #3e5e9a;border: 2px solid #3e5e9a;
+    color: #3e5e9a;border: 2px solid #080808;
 }
 
 li.active span.round-tabs.three{
     background: #fff !important;
-    border: 2px solid #ddd;
+    border: 3px dotted #080808;
     color: #3e5e9a;
 }
 
 span.round-tabs.four{
-    color: #f1685e;border: 2px solid #f1685e;
+    color: #f1685e;border: 2px solid #080808;
 }
 
 li.active span.round-tabs.four{
     background: #fff !important;
-    border: 2px solid #ddd;
+    border: 3px dotted #080808;
     color: #f1685e;
 }
 
 span.round-tabs.five{
-    color: #999;border: 2px solid #999;
+    color: #999;border: 2px solid #080808;
 }
 
 li.active span.round-tabs.five{
     background: #fff !important;
-    border: 2px solid #ddd;
+    border: 3px dotted #080808;
     color: #999;
 }
 
@@ -126,6 +126,11 @@ li.active span.round-tabs.five{
 .nav-tabs > li {
     height: 100%;
 }
+
+.nav-tabs {
+    border-bottom: 1px solid #000;
+}
+
 /*li.active:before {
     content: " ";
     position: absolute;
@@ -156,7 +161,7 @@ li.active span.round-tabs.five{
    opacity:1;
     margin: 0 auto;
     border: 12px solid transparent;
-    border-bottom-color: #c9697b;
+    border-bottom-color: #000000;
 
 }
 .nav-tabs > li a{
@@ -172,13 +177,14 @@ li.active span.round-tabs.five{
 .Legende {
     text-align: center;
     font-weight: bold;
+    padding-bottom: 5px;
 }
 
 .tab-content{
 }
 .tab-pane{
    position: relative;
-padding-top: 50px;
+/*padding-top: 50px;*/
 }
 .tab-content .head{
     font-family: 'Roboto Condensed', sans-serif;
