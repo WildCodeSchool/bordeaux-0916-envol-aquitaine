@@ -1,7 +1,7 @@
 ((app) => {
     'use strict'
-    app.component("footer", {
-        templateUrl: 'js/components/common/footer.html',
+    app.component("footernans", {
+        templateUrl: 'js/components/common/footernans.html',
         bindings: {
             ngModel: '=',
             editMode: '<'
