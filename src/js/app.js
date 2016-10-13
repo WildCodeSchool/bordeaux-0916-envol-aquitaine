@@ -56,6 +56,8 @@
     'app.services',
     'app.common',
     'app.home',
-    'app.about',
-    'app.planning'
+    'app.planning',
+    'app.contactform',
+    'app.about'
+
 ]))
