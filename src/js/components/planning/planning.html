@@ -1,13 +1,16 @@
 <section>
-    <img alt="" src="img/pilates.jpg" style="margin-left: 650px;" />
-    <div class="container">
-        <div class="row concepts">
-            <cardplanning class="col-lg-10" />
+    <div ng-controller="Ctrl">
+        <img alt="" src="img/pilates.jpg" style="margin-left: 650px;" />
+        <div class="container">
+            <div class="row concepts">
+                <cardplanningjunior class="col-lg-10" />
+                <a href="#goadult" title="planningadult">Voir le planning</a>
+                <button ng-click="goadulte()" class="goadulte">Voir le planning Adulte</button>
+              <a name="planningadult">  <cardplanning class="col-lg-10" /></a>
+            </div>
         </div>
+
     </div>
-
-
-
 
 
 

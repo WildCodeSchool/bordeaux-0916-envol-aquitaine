@@ -3,4 +3,5 @@
     app.component("planning", {
         templateUrl: 'js/components/planning/planning.html'
     })
-})(angular.module('app.planning'))
+
+  })(angular.module('app.planning'))
