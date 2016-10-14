@@ -5,9 +5,16 @@
         bindings: {
             user: '<'
         },
-        controller: [function() {
+        controller: ['$document','$scope', function($document, $scope) {
             angular.extend(this, {
+              $onInit() {
+                  $document.bind('scroll', () => {
+                      $scope.$apply(() =>{
+                          this.fixedNav = ($document.scrollTop() > 256)
+                      });
 
+                  });
+              }
             })
         }]
     })
