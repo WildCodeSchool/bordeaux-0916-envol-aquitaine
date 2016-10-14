@@ -8,6 +8,10 @@ input {
   padding: 0px 15px;*/
   float: left;
 
+}
+
+
+
 .icon-case {
   width: 35px;
   float: left;
@@ -24,6 +28,33 @@ i {
     position: absolute;
 }
 
+/*
+.btn-red {
+  background-color: #853838 !important;
+}*/
+
+
+
+/* Flexible iFrame */
+
+/*.flexible-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.flexible-container iframe,   
+.flexible-container object,  
+.flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}*/
+
 
 .map-responsive{
     overflow:hidden;
@@ -37,3 +68,4 @@ i {
     height:100%;
     width:100%;
     position:absolute;
+}
