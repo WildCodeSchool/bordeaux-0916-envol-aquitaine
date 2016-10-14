@@ -8,19 +8,29 @@
     font-weight: bold;
 }
 
-.container {
-  width: 1140 px;
-}
+
 
 html {
     position: relative;
     min-height: 100%;
 }
 
+#blockpage{
+    width: 1140px;
+    text-align: center;
+    margin: auto;
+
+    background-color: white;
+    border: double;
+
+    border-color: black;
+    margin: auto;
+}
+
 body {
     /*padding-top: 70px;*/
-    background-color: #483f3f;
     color: $text-default;
+    background-color: $text-default;
 }
 /* form */
 .form {
@@ -169,4 +179,16 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 /* editor */
 .editable {
     background: $text-edit;
+}
+.container {
+
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1200px) {
+.container {
+    width: 1134px;
+}
 }
