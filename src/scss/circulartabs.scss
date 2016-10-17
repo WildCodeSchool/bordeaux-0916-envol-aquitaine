@@ -1,12 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 /* written by riliwan balogun http://www.facebook.com/riliwan.rabo*/
-.board{
-    width: 100%;
-/*margin: 60px auto;*/
-height: 400px;
-/*background: #fff;*/
-/*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
-}
+
 
 .board-inner.row{
   margin-left: 0px;
@@ -25,7 +19,7 @@ height: 400px;
 
 
 .board > div.board-inner{
-    background-image: url(/img/back-activites.jpg);
+    background-image: url(/img/backacti.jpg);
     /*background-size: 30%;*/
     margin-left: 0px;
     margin-right: 0px;
@@ -34,6 +28,7 @@ height: 400px;
 p.narrow{
     width: 60%;
     margin: 10px auto;
+    color: white;
 }
 
 /*.liner{
@@ -191,6 +186,9 @@ li.active span.round-tabs.five{
     font-size: 25px;
     text-transform: uppercase;
     padding-bottom: 10px;
+    color: white;
+    margin-top: 0px;
+    padding-top: 15px;
 }
 .btn-outline-rounded{
     padding: 10px 40px;

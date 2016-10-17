@@ -1,0 +1,31 @@
+/* Footer Menu */
+#footer {
+  color: #444;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+#footermenu ul {
+  margin: 0;
+}
+#footermenu ul li {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#footermenu ul li:last-child {
+  border: none;
+}
+#footermenu ul li a {
+  color: #444;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+}
+#footermenu ul li a:hover {
+  color: #ffffff;
+}
+/* Copyright */
+#copyright p {
+  padding: 0;
+  margin: 0;
+}*/

@@ -1,0 +1,21 @@
+.col-lg-1 {
+    border-width: 1px;
+    width: 90px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.row {
+    /*margin-left: 75px;*/
+}
+
+button {
+  width: 150px;
+    height: 70px;
+    font:16px Arial;
+    box-shadow:1px 1px 3px #271717;
+    color:#fff;
+    background:#c3230e;
+    border-radius:8px;
+}
