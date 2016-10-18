@@ -58,6 +58,6 @@
     'app.home',
     'app.planning',
     'app.contactform',
-    'app.about'
-
+    'app.about',
+    'app.blog'
 ]))
