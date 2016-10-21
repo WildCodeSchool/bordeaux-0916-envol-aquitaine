@@ -4,7 +4,13 @@ h4 {
   margin-top: 20px;
   font-family: Arial, sans-serif;
   margin-right: 10px;
+  color: white;
 }
 .img-responsive {
   display:inline;
+}
+.cardplanningjunior {
+  background: #380c0c;
+  border: 2px solid #380c0c;
+  border-radius: 20px;
 }

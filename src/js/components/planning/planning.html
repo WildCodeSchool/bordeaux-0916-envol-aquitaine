@@ -1,17 +1,26 @@
 <section>
 
-        <img alt="" src="img/pilates.jpg" style="margin-left: 650px;" />
-        <div class="container">
-            <div class="row concepts">
-                <cardplanningjunior class="col-lg-10" />
-                <a ng-href="#goadult" title="planningadult">Voir le planning</a>
+    <img alt="" src="img/pilates.jpg" />
+    <div class="container">
+        <div class="row concepts">
+            <cardplanningjunior class="col-lg-10" />
 
-              <a name="planningadult">  <cardplanning class="col-lg-10" /></a>
+
+
+            <a href="#planningadult">Voir le planning</a> </br>
+            <div id="scrollArea" ng-controller="ScrollController">
+                <a ng-click="gotoBottom()">Go to bottom</a>
+                <a id="bottom"></a> You're at the bottom!
+            </div>
+
+
+
+
+            <div id="planningadult">
+                <cardplanning class="col-lg-10" />
             </div>
         </div>
-
-  
-
+    </div>
 
 
 
