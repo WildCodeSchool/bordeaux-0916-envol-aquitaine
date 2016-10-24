@@ -1,9 +1,5 @@
-.col-lg-1 {
-    border-width: 1px;
-    width: 90px;
-    height: 35px;
-    margin-top: 10px;
-    margin-left: 5px;
+section {
+  background-image: url(/img/fond-planning.jpg);
 }
 
 .row {
