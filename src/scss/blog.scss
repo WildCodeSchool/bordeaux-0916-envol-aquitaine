@@ -2,7 +2,7 @@
 
 
 
-
+.blog{
 
 .topbar {
   background:#B71C1C;
@@ -76,6 +76,7 @@
   transition:0.5s linear all;
   opacity:1;
   padding-bottom:30px;
+  width: 100%;
 
   cite {
     display:inline-block;
@@ -123,4 +124,5 @@ input, textarea {
 
 img {
   max-width:100%;
+}
 }
