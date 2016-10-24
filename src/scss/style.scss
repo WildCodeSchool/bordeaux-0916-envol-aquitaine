@@ -144,8 +144,8 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 }
 
 .btn:hover {
-    background-color: $primary-dark;
-    color: $white;
+    background-color: white;
+    color: #f23232;
     text-shadow: none;
 }
 
@@ -183,13 +183,30 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
     margin-right: auto;
     margin-left: auto;
 }
+.container.actu {
+  background: white;
+}
 .tab-content {
   background-image: url(/img/backcours.jpg);
-  width: 1134px;
-  text-align: center;
+  width: 100%;
   margin: auto;
-  height: 250px;
+  height: auto;
   padding-left: 0px;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.fbbox {
+    /*background: #f23232;*/
+    box-shadow: 3px 3px 3px 3px #f23232, 3px 3px 3px 3px rgba(255,255,255,.15);
+    min-height: 85px;
+    width: 500px;
+    padding-top: 10px;
+    /*border: 2px solid #ff0404;
+    /* margin: 0 1% 0 0; */
+    color: white;
+    /* height: 250px; */
 }
 @media (min-width: 1200px) {
 .container {

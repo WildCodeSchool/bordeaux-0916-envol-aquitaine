@@ -19,15 +19,15 @@
 
 
 .board > div.board-inner{
-    background-image: url(/img/backacti.jpg);
+    background-image: url(/img/backacti2.jpg);
     /*background-size: 30%;*/
     margin-left: 0px;
     margin-right: 0px;
 }
 
 p.narrow{
-    width: 60%;
-    margin: 10px auto;
+    width: 70%;
+    margin: 15px auto;
     color: white;
 }
 
@@ -198,12 +198,20 @@ li.active span.round-tabs.five{
 }
 
 .btn.green{
-    background-color:#5cb85c;
+    background-color:#010101;
     /*border: 2px solid #5cb85c;*/
     color: #ffffff;
 }
 
+.btn{
+  font-weight: bold;
+}
 
+#squall {
+  margin: 15px;
+  padding-left: 0px;
+  padding-right: 15px;
+}
 
 /*@media( max-width : 585px ){
 

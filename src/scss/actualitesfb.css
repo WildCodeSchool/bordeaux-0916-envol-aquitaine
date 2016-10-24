@@ -5,6 +5,14 @@ h4 {
   font-family: Arial, sans-serif;
   margin-right: 10px;
 }
+body.plugin {
+    background: rgba(0,0,0,.075);
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.28;
+    overflow: hidden;
+    -webkit-text-size-adjust: none;
+    width: 100%;
+}
 .img-responsive {
   display:inline;
 }
