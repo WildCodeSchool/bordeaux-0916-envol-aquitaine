@@ -5,7 +5,7 @@
             <div class="row">
                 <ul class="post-grid" ng-show="!$ctrl.postSelected">
                     <li ng-repeat="post in $ctrl.posts" class="col-s-4" ng-class="{ 'reset-s' : $index%3==0 }" ng-click="$ctrl.postSelected = post">
-                        <h3>{{post.title}}</h3>
+                        <h3>{{post.title}}</h3>  <cite>Par {{post.author}} le {{post.createdOn | date}}</cite>
                         <p>{{post.body | limitTo:70}}...</p>
                     </li>
                 </ul>
@@ -36,7 +36,7 @@
                 <h4>Titre</h4>
                 <input type="text" ng-model="$ctrl.post.title"/>
                 <h4>Article</h4>
-                <textarea ng-model="$ctrl.post.body" ng-list="/\n/" rows="10"></textarea>
+                <textarea ng-model="$ctrl.post.body" rows="10"></textarea>
                 <label for="">Image</label>
                 <input type="text" ng-model="$ctrl.post.image" placeholder="http/..." />
                 <label for="">by:</label>
