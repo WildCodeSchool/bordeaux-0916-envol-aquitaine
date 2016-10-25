@@ -59,5 +59,6 @@
     'app.planning',
     'app.contactform',
     'app.about',
-    'app.blog'
+    'app.blog',
+    'app.inscription'
 ]))

@@ -29,6 +29,80 @@ div#slider figure{
 
 figure{
 	padding-bottom:0px;
-	padding-top: 15px;
+	/*padding-top: 15px;*/
 	padding-left: 0px;
+}
+
+div#slider {
+  margin-right: -27px;
+  margin-top: 5px;
+}
+
+
+.col-lg-7 {
+    width: 57.3%;
+}
+
+
+
+.prez-container{
+	color:#ffffff;
+	z-index:11;
+  /*margin-top: 15px;*/
+  height: 425px;
+  /*background-color:brown;*/
+}
+
+.prez-container h4{
+  padding-left:10px; 
+  /*padding-top:10px*/
+  padding:5px;
+  color:black;
+  font-weight: bold;
+}
+
+
+.prez-container p{
+  color:white;
+  /*font-weight:500;*/
+  font-weight: bold;
+  text-align:justify;
+  padding-left:5px;
+  /*padding-bottom:5px;*/
+  line-height:30px;
+  color:white;
+  text-align:justify;
+  padding-bottom:5px;
+}
+
+
+.prez-container:after{
+  content:'';
+  position:absolute;
+  left:103%;
+  top:5px;
+  width: 0px;
+  height: 0px;
+  /*border-top: 440px solid #10bcf4;*/
+  border-top: 425px solid #821313;
+  /*border-top: 425px solid #bc5e43;*/
+  /*border-top: 425px solid #F85556;*/
+  /*border-top: 425px solid #F63233;*/
+  /*border-top: 425px solid #F63233;*/
+  /*border-top: 425px solid -webkit-linear-gradient(right, red, green);*/
+  /*border-top: 425px solid #270909;*/
+  /*border-top: 425px solid brown;*/
+  /*border-top: 425px solid white;*/
+  border-right: 150px solid transparent;
+  background-image:url('img/fond-contactpage.jpg');
+  z-index:1;
+}
+
+
+.frame-k img {
+/*margin-left: -55px;*/
+transform: skewX(-20deg);
+border-left: 10px solid #fff;
+/*box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);*/
+/*transform: skewX(-20deg);*/
 }
