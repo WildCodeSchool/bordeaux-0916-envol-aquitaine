@@ -24,7 +24,7 @@ html {
   line-height: 1.5;
   padding: 2.5em 0;
 }
-.container {
+.tariff {
   margin: 0 auto;
   width: 90%;
   max-width: 1200px;
@@ -139,7 +139,7 @@ html {
     right: -2px;
   }
 
-  & .button {
+  & .buttonner {
     background-color: #0c0c0b;
 
   }
@@ -169,41 +169,41 @@ html {
     right: -2px;
   }
 
-  & .button {
+  & .buttonner {
     background-color: #0c0c0b;
 
   }
 }
-h2, h3, p, ul {
+h2.tarif, h3.tarif, p.tarif, ul.tarif {
   margin: 0
 }
-h2 {
+h2.tarif {
   font-size: 1em;
   font-weight: 400;
   margin: 0 0 0.5em;
 }
-h3 {
+h3.tarif {
   font-size: 1.5em;
   letter-spacing: 0.0625em;
   margin: 0 0 0.3333333333333333em;
 }
-p {
+p.tarif {
   font-size: 0.875em;
 }
-p, ul {
+p.tarif, ul.tarif {
   margin:0 0 1.5em
 }
-ul {
+ul.tarif {
   color: #ffffff;
   font-size: 0.75em;
   list-style-type: none;
   padding: 0;
 
-  li {
+  li.jour {
     margin: 0 0 0.8333333333333333em;
   }
 }
-.button {
+.buttonner {
   background-color: #610806;
   border-radius: 20px;
   color: #fff;
@@ -217,9 +217,9 @@ ul {
   text-decoration: none;
   width: 120px;
 }
-.uppercase, .button, h2 {
+.uppercase, .buttonner, h2.tarif {
   text-transform: uppercase;
 }
-sup, .small {
+sup.tarif, .small {
   font-size: 0.6125em;
 }
