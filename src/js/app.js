@@ -60,5 +60,6 @@
     'app.contactform',
     'app.about',
     'app.organi',
-    'app.blog'
+    'app.blog',
+    'app.inscription'
 ]))
