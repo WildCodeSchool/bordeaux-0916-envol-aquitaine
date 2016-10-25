@@ -1,8 +1,10 @@
-<div class="container concepts">
+<div class="container concepts" style="background-color:#821313">
+<!--<div class="container concepts" style="background-color:#F63233">-->
+<!--<div class="container concepts" style="background-image:url('img/fond-contactpage.jpg')">-->
 
   <div class="col-md-9">
-    <h2>Contactez-nous !</h2>
-    <p style="text-align: justify">
+    <h2 style="color:black"> <strong>Contactez-nous !</strong></h2>
+    <p style="color:white;text-align:justify;line-height:30px;padding-bottom:5px;font-weight: bold;">
       At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
       voluptatum deleniti atque corrupti quos dolores et quas feugiat. Et harum quidem rerum
       facilis est et expedita distinctio lorem ipsum
@@ -11,41 +13,92 @@
 
     <br>
 
-    <form>
+
+<!--
+    <form name="form" action="mailto:oussou.dev@gmail.com" method="post" novalidate>
       <div class="row" style="margin-bottom:20px">
           <div class="col-md-6 col-md-offset-0">
-              <span class="icon-case"><i class="fa fa-user color-primary"></i></span>
-              <input class="form-control" type="text" placeholder="Nom">
+              <span class="icon-case"><i class="fa fa-user color-contact-primary"></i></span>
+              <input class="form-control" type="text" placeholder="Nom" required>
           </div>
 
           <div class="col-md-6 col-md-offset-0">
               <span class="icon-case"><i></i></span>
-              <input class="form-control" type="text" placeholder="Prénom">
+              <input class="form-control" type="text" placeholder="Prénom" required>
           </div>
       </div>
 
       <div class="row" style="margin-bottom:20px">
           <div class="col-md-6 col-md-offset-0">
-              <span class="icon-case"><i class="fa-envelope color-primary"></i></span>
-              <input class="form-control" type="text" placeholder="Email">
+              <span class="icon-case"><i class="fa fa-envelope color-contact-primary"></i></span>
+                <input class="form-control" type="email" placeholder="Email">                
           </div>
 
           <div class="col-md-6 col-md-offset-0" style="margin-bottom:10px">
-              <span class="icon-case"><i class="fa-phone color-primary"></i></span>
+              <span class="icon-case"><i class="fa fa-phone color-contact-primary"></i></span>
               <input class="form-control" type="text" placeholder="Phone">
           </div>
       </div>
 
-      <!--<label>Message</label>-->
+
       <div class="row" style="margin-bottom:20px">
           <div class="col-md-12 col-md-offset-0">
-            <span class="icon-case"><i class="fa-pencil color-primary"></i></span>
-            <textarea rows="12" class="form-control" placeholder="Message"></textarea>
+            <span class="icon-case"><i class="fa fa-pencil color-contact-primary"></i></span>
+            <textarea name="message" rows="12" class="form-control" placeholder="Message"></textarea>
           </div>
       </div>
 
       <p>
-          <button type="submit" class="color-primary">Envoyer le message</button>
+        <span type="submit" class="pull-left btn color-contact-primary" ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid">
+          Send Message
+        </span>
+      </p>
+
+  </form>
+  <!End Contact Form
+  </div>
+  /md9
+-->
+
+    <form name="formcontact" action="mailto:oussou.dev@gmail.com" method="post" novalidate>
+      <div class="row" style="margin-bottom:20px">
+          <div class="col-md-6 col-md-offset-0">
+              <span class="icon-case"><i class="fa fa-user color-contact-white"></i></span>
+              <input class="form-control" type="text" placeholder="Nom" ng-model="nom" ng-model-options="{ updateOn: 'blur' }" required pattern=".{2,}">
+              
+          </div>
+
+          <div class="col-md-6 col-md-offset-0">
+              <span class="icon-case"><i></i></span>
+              <input class="form-control" type="text" placeholder="Prénom" required>
+          </div>
+      </div>
+
+      <div class="row" style="margin-bottom:20px">
+          <div class="col-md-6 col-md-offset-0">
+              <span class="icon-case"><i class="fa fa-envelope color-contact-white"></i></span>
+                <input class="form-control" type="email" placeholder="Email">                
+          </div>
+
+          <div class="col-md-6 col-md-offset-0" style="margin-bottom:10px">
+              <span class="icon-case"><i class="fa fa-phone color-contact-white"></i></span>
+              <input class="form-control" type="text" placeholder="Phone">
+          </div>
+      </div>
+
+      <div class="row" style="margin-bottom:20px">
+          <div class="col-md-12 col-md-offset-0">
+            <span class="icon-case"><i class="fa fa-pencil color-contact-white"></i></span>
+            <textarea name="message" rows="12" class="form-control" placeholder="Message"></textarea>
+          </div>
+      </div>
+
+     
+
+      <p>
+        <span type="submit" ng-disabled="form.$invalid" class="pull-left btn btn-default" style="background-color:white" ng-disabled="contactform.user.$dirty && contactform.user.$invalid || contactform.email.$dirty && contactform.email.$invalid">
+          <strong style="color:black">Envoyer</strong> 
+        </span>
       </p>
 
   </form>
@@ -53,30 +106,35 @@
   </div>
   <!-- /md9 -->
 
-  <!-- Contact Form -->
+
+
+
+
+
+  <!-- Contact Side -->
   <div class="col-md-3">
-    <div class="panel panel-default">
+    <div class="panel panel-default" style="margin-top:20px">
       <div class="panel-heading">
           <h3 class="panel-title">Permanence</h3>
       </div>
       <div class="panel-body">
-        <p style="text-align: justify">
+        <p style="text-align:justify;margin-bottom:15px;">
           Lorem ipsum dolor sit amet, no cetero voluptatum est, audire sensibus maiestatis vis et.
           Vitae audire prodesset an his. Nulla ubique omnesque in sit.
         </p>
 
         <ul class="list-unstyled">
             <li>
-                <strong class="color-primary">Mercredi :</strong> de 14h à 19h
+                <strong class="color-contact-primary">Mercredi :</strong> de 14h à 19
             </li>
             <br>
             <li>
-                <i class="fa fa-phone color-primary"></i>
+                <i class="fa fa-phone color-contact-primary"></i>
                 <span style="margin-left:20px">  05 56 91 89 48</span>
             </li>
             <br>
             <li>
-                <i class="fa-envelope color-primary"></i>
+                <i class="fa fa-envelope color-contact-primary"></i>
                 <span style="margin-left:20px">envol.d.aquitaine@gmail.com</span>
             </li>
         </ul>
@@ -90,15 +148,17 @@
       </div>
 
       <div class="panel-body">
-        <strong>Association sportive</strong> <br> <br>
-        <span> <strong class="color-primary">Siret : </strong> 377 581 533 00025</span> <br><br>
-        <span> <strong class="color-primary">Agr : </strong> 33 S 83 48 B.</span> <br><br>
-        <span> <strong class="color-primary">DRDJS : </strong> 33 58 34 83 </span> <br>
+        <strong>Association sportive</strong><br>
+        <span>4bis Rue des Douves <br> 33000 Bordeaux</span>
+        <br> <br>
+        <span> <strong class="color-contact-primary">Siret : </strong> 377 581 533 00025</span> <br><br>
+        <span> <strong class="color-contact-primary">Agr : </strong> 33 S 83 48 B.</span> <br><br>
+        <span> <strong class="color-contact-primary">DRDJS : </strong> 33 58 34 83 </span> <br>
       </div>
     </div>
 
   </div>
-  <!-- /md3 -->
+  <!-- /md3 contact side -->
 
 </div>
 <!-- /container -->
@@ -106,24 +166,34 @@
 <br>
 
 <!-- Google Maps + Indications -->
-<div class="container concepts">
-    <div class="col-md-9">
-      <h2>Se rendre au Gymnase ...</h2>
-      <p style="text-align: justify">
+<!--<div class="container concepts" style="background-image:url('img/fond-contactpage.jpg'); margin-bottom:15px">-->
+<!--<div class="container concepts" style="margin-top:-21px;background-color:#F63233">-->
+<div class="container concepts" style="margin-top:-21px;background-color:#821313">
+    <div class="col-md-12">
+      <h2 style="color:black"> <strong>Se rendre au Gymnase ...</strong> </h2>
+      <p style="color:white;text-align:justify;line-height:30px;padding-bottom:5px;font-weight: bold;">
         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-        voluptatum deleniti atque corrupti quos dolores et quas feugiat. Et harum quidem rerum
+        voluptatum deleniti atque corrupti <br> quos dolores et quas feugiat. Et harum quidem rerum
         facilis est et expedita distinctio lorem ipsum
-        dolor sit amet, consectetur adipiscing elit landitiis.
+        dolor sit amet, consectetur <br> adipiscing elit landitiis.
       </p>
     </div>
 
-    <br><br>
+    <!--<br><br>-->
 
-    <div class="row">
-        <div class="col-xs-12">
+    <div class="row" style="margin-top:-21px;margin-bottom:25px">
+        <!--maps-->
+        <div class="col-xs-12 col-md-6" style="">
           <div class="map-responsive">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.5588950517963!2d-0.5679845849340132!3d44.83055027909866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55264b204c35e5%3A0xdf02ecaf514d5455!2sGymnase+Envol+d&#39;Aquitaine!5e0!3m2!1sfr!2sfr!4v1476366263693" frameborder="0" style="border:0" allowfullscreen>
             </iframe>
+          </div>
+        </div>
+
+        <!--entree img -->
+        <div class="col-xs-12 col-md-6" style="">
+          <div class="map-responsive">
+            <img src="img/carousel/4-bis.jpg" alt="envol">
           </div>
         </div>
       </div>
