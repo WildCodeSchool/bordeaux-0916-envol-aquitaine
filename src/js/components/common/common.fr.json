@@ -17,5 +17,6 @@
   "COMMON_PASSWORD": "Mot de passe",
   "COMMON_EMAIL": "Email",
   "COMMON_FIRSTNAME": "Prénom",
-  "COMMON_LASTNAME": "Nom"
+  "COMMON_LASTNAME": "Nom",
+  "COMMON_INSCRIPTION": "Inscription"
 }
