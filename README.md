@@ -22,7 +22,7 @@ CMS Project with [MEAN stack](http://mean.io/#!/)
 
 ```bash
 git clone https://github.com/WildCodeSchool/bordeaux-0916-envol-aquitaine.git  
-cd tiny-mean-cms
+cd bordeaux-0916-envol-aquitaine
 bower i
 npm i
 ```
