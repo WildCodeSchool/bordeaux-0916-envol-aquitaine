@@ -1,48 +1,60 @@
-<section class="blog">
+<section>
+    <div class="row">
+        <div class="col-md-12" ng-if="!$ctrl.postSelected">
+            <a ng-click="$ctrl.edit = !$ctrl.edit">{{ ($ctrl.edit ? 'Annuler' : 'Ecrire un article ')}}</a>
+        </div>
+        <div class="col-md-12" ng-if="$ctrl.postSelected">
+            <a ng-click="$ctrl.edit = !$ctrl.edit">{{ ($ctrl.edit ? 'Annuler' : 'Editer article ')}}</a>
+        </div>
+    </div>
 
-    <div class="content">
-        <div class="container">
+    <div class="row" ng-repeat="post in $ctrl.posts" ng-if="!$ctrl.postSelected && !$ctrl.edit">
+        <div class="col-md-3
+         text-center">
+            <h1>{{post.createdAt | date:'dd'}}</h1>
+            <h3>{{post.createdAt | date:'MM'}}</h3>
+        </div>
+        <div class="col-md-9">
+            <h5>{{post.title}}</h5>
+            <cite>Par {{post.author}}</cite>
+            <p>{{post.body}}</p>
+            <a ng-click="$ctrl.postSelected = post">Lire la suite</a>
+        </div>
+    </div>
+
+    <div class="row" ng-if="$ctrl.postSelected && !$ctrl.edit">
+        <div class="col-md-12">
+            <a ng-click="$ctrl.postSelected = null">Retour</a>
+        </div>
+    </div>
+
+    <div class="row" ng-if="$ctrl.postSelected && !$ctrl.edit">
+        <div class="col-md-12">
             <div class="row">
-                <ul class="post-grid" ng-show="!$ctrl.postSelected">
-                    <li ng-repeat="post in $ctrl.posts" class="col-s-4" ng-class="{ 'reset-s' : $index%3==0 }" ng-click="$ctrl.postSelected = post">
-                        <h3>{{post.title}}</h3>  <cite>Par {{post.author}} le {{post.createdAt | date}}</cite>
-                        <p>{{post.body | limitTo:70}}...</p>
-                    </li>
-                </ul>
-                <button type="button" class="btn" ng-show="$ctrl.postSelected" ng-click="$ctrl.postSelected = null">Retour</button>
-
-
-
-                <!-- POST -->
-                <div class="post" ng-show="$ctrl.postSelected">
-                    <div>
-                        <h2>{{$ctrl.postSelected.title}}</h2>
-                        <img src="{{$ctrl.postSelected.image}}" ng-show="$ctrl.postSelected.image" />
-                        <cite>Par {{$ctrl.postSelected.author}} le {{$ctrl.postSelected.createdOn | date}}</cite>
-                        <div class="post-body" ng-bind-html="$ctrl.postSelected.body">
-                        </div>
-
-                    </div>
-                </div>
-                <!-- END POST -->
+                <h2 class="col-md-12">{{$ctrl.postSelected.title}}</h2>
+            </div>
+            <div class="row">
+                <cite class="col-md-12">Par {{$ctrl.postSelected.author}} le {{$ctrl.postSelected.createdAt | date}}</cite>
+            </div>
+            <div class="row">
+                <img class="col-md-12" src="{{$ctrl.postSelected.image}}" ng-if="$ctrl.postSelected.image" />
+            </div>
+            <div class="row">
+                <p class="col-md-12">{{$ctrl.postSelected.body}}</p>
             </div>
         </div>
-
     </div>
-    <div class="post" ng-show="!$ctrl.postSelected" ng-hide="!$ctrl.isEdit">
-        <h2>Ajouter un article</h2>
 
-        <form name="postForm" ng-submit=" $ctrl.addPost()" novalidate>
-                <h4>Titre</h4>
-                <input type="text" ng-model="$ctrl.post.title"/>
-                <h4>Article</h4>
-                <textarea ng-model="$ctrl.post.body" rows="10"></textarea>
-                <label for="">Image</label>
-                <input type="text" ng-model="$ctrl.post.image" placeholder="http/..." />
-                <label for="">by:</label>
-                <input type="text" ng-model="$ctrl.post.author" placeholder="Nom de l'auteur" required/>
-                <input type="submit" value="Submit"ng-click="$ctrl.isEdit = false" />
-            </form>
-          </div>
-<button type="button" ng-click="$ctrl.isEdit = !$ctrl.isEdit" ng-show="!$ctrl.postSelected">Nouveau article</button>
+    <form class="form" ng-if="$ctrl.edit" name="frmPost" ng-submit="$ctrl.savePost()">
+        <div class="form-group">
+            <label for="title">Titre:</label>
+            <input type="text" class="form-control" id="title" ng-model="$ctrl.postSelected.title" ng-required="true">
+        </div>
+        <div class="form-group">
+            <label for="textContent">Contenu:</label>
+            <text-angular class="col-md-12 form-group" id="textContent" ng-model="$ctrl.postSelected.body" ng-required="true"></text-angular>
+        </div>
+        <button type="submit" name="button">Save</button>
+    </form>
+
 </section>

@@ -8,7 +8,7 @@
                     <ul class="nav nav-tabs" id="myTab">
                         <div class="liner"></div>
                         <li class="active col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1">
-                            <a ng-click="tabo='pilates'" data-toggle="tab" title="">
+                            <a ng-click="$ctrl.tab='pilates'" data-toggle="tab" title="">
                                 <figcaption class="Legende">PILATES</figcaption>
                                 <span class="round-tabs one">
                                           <!-- <i class="glyphicon glyphicon-home"></i>-->
@@ -18,7 +18,7 @@
                         </li>
 
                         <li class="col-sm-2 col-md-2">
-                            <a ng-click="tabo='zumba'" data-toggle="tab" title="">
+                            <a ng-click="$ctrl.tab='fitness'" data-toggle="tab" title="">
                                 <figcaption class="Legende">FITNESS</figcaption>
 
                                 <span class="round-tabs two">
@@ -28,7 +28,7 @@
                             </a>
                         </li>
                         <li class="col-sm-2 col-md-2">
-                            <a ng-click="tabo='fitness'" data-toggle="tab" title="">
+                            <a ng-click="$ctrl.tab='senior'" data-toggle="tab" title="">
                                 <figcaption class="Legende">GYM SENIOR</figcaption>
                                 <span class="round-tabs three">
                                       <!-- <i class="glyphicon glyphicon-gift"></i>-->
@@ -37,7 +37,7 @@
                         </li>
 
                         <li class="col-sm-2 col-md-2">
-                            <a ng-click="tabo='senior'" data-toggle="tab" title="">
+                            <a ng-click="$ctrl.tab='gaf'" data-toggle="tab" title="">
                                 <figcaption class="Legende">G.A.F</figcaption>
                                 <span class="round-tabs four">
                                           <!-- <i class="glyphicon glyphicon-comment"></i>-->
@@ -47,7 +47,7 @@
                         </li>
 
                         <li class="col-sm-2 col-md-2">
-                            <a ng-click="tabo='gaf'" data-toggle="tab" title="">
+                            <a ng-click="$ctrl.tab='ptits'" data-toggle="tab" title="">
                                 <figcaption class="Legende">GYM DES P'TITS</figcaption>
                                 <span class="round-tabs five">
                                           <!-- <i class="glyphicon glyphicon-ok"></i>-->
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="tab-content">
-                    <div class="row tab-pane fade in active" ng-if=tabo==='pilates'>
+                    <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='pilates'">
                         <img src="/img/circulartabs/IMG_3202-sport.jpg" class="col-md-3" id="squall"/>
                         <p class="narrow text-justify col-md-9">
                             La méthode Pilates, parfois simplement appelée Pilates est un système d’exercices physiques développé au début du XXème siècle par un passionné de sport et du corps humain Joseph Pilates. Le Pilates est pratiqué au tapis avec ou sans accessoires. Cette
@@ -70,7 +70,7 @@
                         </p>
                     </div>
 
-                    <div class="row tab-pane fade in active" ng-if=tabo==='zumba'>
+                    <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='fitness'">
                         <img src="/img/circulartabs/IMG_3202-sport.jpg" class="col-md-3" id="squall"/>
                         <p class="narrow text-justify col-md-9">
                             Le Fitness ou gymnastique de forme désigne un ensemble d’activités physiques visant à améliorer sa condition physique et son hygiène de vie dans un souci de bien être. Cours proposés à l’Envol d’Aquitaine : Renforcement Musculaire Cardio Fitness Circuit
@@ -82,7 +82,7 @@
                         </p>
                     </div>
 
-                    <div class="row tab-pane fade in active" ng-if=tabo==="fitness" id="messages">
+                    <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='senior'" id="messages">
                         <img src="/img/circulartabs/IMG_3202-sport.jpg" class="col-md-3" id="squall"/>
                         <p class="narrow text-justify col-md-9">
                             Ce cours est composé d’exercices de gymnastique adaptés aux séniors. Idéal pour préserver sa santé, renforcer sa masse musculaire, maintenir ou apprendre l’équilibre et conserver une certaine mobilité articulaire.
@@ -93,7 +93,7 @@
                         </p>
                     </div>
 
-                    <div class="row tab-pane fade in active" ng-if=tabo==="senior" id="settings">
+                    <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='gaf'" id="settings">
                         <img src="/img/circulartabs/IMG_3202-sport.jpg" class="col-md-3" id="squall"/>
                         <p class="narrow text-justify col-md-9">
                             est une discipline olympique qui se pratique sur 4 agrès : saut de cheval, barres asymétriques, poutre et sol (dans l'ordre olympique). La GAF tient autant de l'art que du sport : au-delà de la performance physique, la maîtrise technique, la souplesse
@@ -106,7 +106,7 @@
                         </p>
                     </div>
 
-                    <div class="row tab-pane fade in active" ng-if=tabo==="gaf" id="doner">
+                    <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='ptits'" id="doner">
                         <img src="/img/circulartabs/IMG_3202-sport.jpg" class="col-md-3" id="squall"/>
                         <p class="narrow text-justify col-md-9">
                             Dès 3 ans à travers différents parcours les plus jeunes acquièrent les bases gymniques : ramper, courir, sauter, rouler, tourner, rebondir et s’équilibrer. L’encadrement est assuré par un professeur diplômé, accompagné de gymnastes du club. L’accessibilité à la pratique sportive
