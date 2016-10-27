@@ -1,4 +1,6 @@
+
 <section id="blog">
+
     <div class="row">
         <div class="col-md-12" ng-if="!$ctrl.postSelected">
             <a ng-click="$ctrl.edit = !$ctrl.edit">{{ ($ctrl.edit ? 'Annuler' : 'Ecrire un article ')}}</a>
@@ -8,13 +10,17 @@
         </div>
     </div>
 
+
     <div class="row post" ng-repeat="post in $ctrl.posts" ng-if="!$ctrl.postSelected && !$ctrl.edit" >
+
         <div class="col-md-3
          text-center">
             <h1>{{post.createdAt | date:'dd'}}</h1>
             <h3>{{post.createdAt | date:'MM'}}</h3>
         </div>
+
         <div class="col-md-9" ng-click="$ctrl.postSelected">
+
             <h5>{{post.title}}</h5>
             <cite>Par {{post.author}}</cite>
             <p>{{post.body}}</p>

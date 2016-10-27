@@ -1,5 +1,6 @@
 @import 'colors';
 
+
 #blog {
     h1 {
         cursor: pointer;
@@ -28,7 +29,6 @@
             }
         }
     }
-
     .content {
         width: 100%;
         position: relative;
@@ -40,7 +40,9 @@
         color: #B71C1C;
     }
 
+
     .row.post:hover {
+
         -webkit-transition: 0.5s linear all;
         transition: 0.5s linear all;
         opacity: 1;
@@ -53,12 +55,6 @@
             padding: 10px 0;
         }
     }
-    #post:hover {
-    background-color: red;
-}
-
-
-
     .post.ng-hide {
         opacity: 0;
     }
