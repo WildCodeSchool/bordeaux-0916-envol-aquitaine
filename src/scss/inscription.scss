@@ -1,19 +1,12 @@
+.inscription {
+  text-align: center;
+}
+
 .telechargement {
   font-size: 22px;
   padding-top: 10px;
 padding-bottom: 10px;
 }
-
-
-
-/*
-html {
-  box-sizing: border-box;
-  height: 100%;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}*/
 .fond {
   background-color: #000000;
   background-repeat: no-repeat;
@@ -34,7 +27,7 @@ html {
   display: table;
   clear: both;
 }
-.grid-1-5 {
+.col-lg-2 {
   border: 2px solid #610806;
   min-height: 525px;
   padding: 1.25em;
@@ -74,9 +67,9 @@ html {
   }
 
 }
-.grid-1-5bas {
+/*.menu1 {
   border: 2px solid #610806;
-  min-height: 250px;
+  min-height: 330px;
   padding: 1.25em;
   position: relative;
   text-align: center;
@@ -114,7 +107,47 @@ html {
   }
 
 }
-.grid-1-5:hover {
+.menu3 {
+  border: 2px solid #610806;
+  min-height: 330px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+
+  @media screen and (min-width: 700px) {
+    & {
+      float: left;
+      width: 50%;
+    }
+    &:nth-child(odd) {
+      clear: left;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    & {
+      width: 33.3333333%;
+    }
+    &:nth-child(3n+1) {
+      clear: left;
+    }
+    &:nth-child(odd) {
+      clear: none;
+    }
+  }
+
+  @media screen and (min-width: 1120px) {
+    & {
+       width: 20%;
+    }
+    &:nth-child(odd), &:nth-child(3n+1) {
+       clear: none;
+    }
+  }
+
+}*/
+.col-lg-2:hover {
   background-color: #820808;
   border-top: 3px solid #610806;
   border-bottom: 3px solid #610806;
