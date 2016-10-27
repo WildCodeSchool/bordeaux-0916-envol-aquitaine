@@ -1,10 +1,12 @@
 @import 'colors';
 
-.blog {
+#blog {
     h1 {
         cursor: pointer;
     }
-
+.button{
+  width: 2px;
+}
     ul.post-grid {
         margin: 0;
         padding: 0;
@@ -38,30 +40,24 @@
         color: #B71C1C;
     }
 
-    .post {
+    .row.post:hover {
         -webkit-transition: 0.5s linear all;
         transition: 0.5s linear all;
         opacity: 1;
         padding-bottom: 30px;
+        background:#B71C1C;
+
 
         cite {
             display: inline-block;
             padding: 10px 0;
         }
     }
+    #post:hover {
+    background-color: red;
+}
 
-    .comments {
-        ul {
-            margin: 0;
-            padding: 0;
 
-            li {
-                list-style-type: none;
-                padding: 20px 5px;
-                border-bottom: 1px #B71C1C solid;
-            }
-        }
-    }
 
     .post.ng-hide {
         opacity: 0;
