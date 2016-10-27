@@ -1,25 +1,52 @@
 <section>
+  <div class="container">
 
     <img alt="" src="img/pilates.jpg" />
-    <div class="container">
-        <div class="row concepts">
-            <cardplanningjunior class="col-lg-10" />
+
+        <div class="row">
+
+            <div class="col-lg-6">
+                <a href ng-click="$ctrl.planning='gojunior'" data-toggle="planning" class="boutonpla  btn-lg" ng-style="(a ? {color: black } : {color: white })">Planning Junior</a>
+
+            </div>
+            <div class="col-lg-6">
+                <a href ng-click="$ctrl.planning='goadult'" data-toggle="planning" class="boutonpla btn-lg" ng-style="(gojunior ? {background-color: 'black'} : {background-color:'white'})">Planning Adulte</a>
+
+            </div>
+          </div>
+              <div class="row">
+            <div class="col-lg-12">
+              <h2 ng-if="$ctrl.planning==='gojunior'" class="planning"> Planning Junior </h2>
+              <img ng-src="img/planning-junior.png" class="img-responsive img-thumbnail" ng-if="$ctrl.planning==='gojunior'">
+            </div>
+          </div>
+          <div class="row">
+        <div class="col-lg-12">
+          <h2 ng-if="$ctrl.planning==='goadult'" class="planning"> Planning Adulte </h2>
+          <img ng-src="/img/planning-adulte.png" class="img-responsive img-thumbnail" ng-if="$ctrl.planning==='goadult'">
+        </div>
+      </div>
+
+        </div>
 
 
 
-            <div id="scrollArea" ng-controller="ScrollController">
-                <a ng-click="gotoBottom('planningadult')">Go to bottom</a>
 
 
 
-            <div id="planningadult">
-                <cardplanning class="col-lg-10" />
+
+
+<!--
+            <div class="col-lg-6">
+              <h2> Planning Adulte </h2>
+                <img src="/img/planning-adulte.png" class="img-responsive" alt="" />
             </div>
 
-        </div>
 
-        </div>
-    </div>
+-->
+
+
+
 
 
 
