@@ -27,9 +27,9 @@ padding-bottom: 10px;
   display: table;
   clear: both;
 }
-.col-lg-2 {
+.col-lg-3 {
   border: 2px solid #610806;
-  min-height: 525px;
+  min-height: 205px;
   padding: 1.25em;
   position: relative;
   text-align: center;
@@ -67,87 +67,8 @@ padding-bottom: 10px;
   }
 
 }
-/*.menu1 {
-  border: 2px solid #610806;
-  min-height: 330px;
-  padding: 1.25em;
-  position: relative;
-  text-align: center;
-  transition: all .2s ease-in-out;
 
-  @media screen and (min-width: 700px) {
-    & {
-      float: left;
-      width: 50%;
-    }
-    &:nth-child(odd) {
-      clear: left;
-    }
-  }
-
-  @media screen and (min-width: 800px) {
-    & {
-      width: 33.3333333%;
-    }
-    &:nth-child(3n+1) {
-      clear: left;
-    }
-    &:nth-child(odd) {
-      clear: none;
-    }
-  }
-
-  @media screen and (min-width: 1120px) {
-    & {
-       width: 20%;
-    }
-    &:nth-child(odd), &:nth-child(3n+1) {
-       clear: none;
-    }
-  }
-
-}
-.menu3 {
-  border: 2px solid #610806;
-  min-height: 330px;
-  padding: 1.25em;
-  position: relative;
-  text-align: center;
-  transition: all .2s ease-in-out;
-
-  @media screen and (min-width: 700px) {
-    & {
-      float: left;
-      width: 50%;
-    }
-    &:nth-child(odd) {
-      clear: left;
-    }
-  }
-
-  @media screen and (min-width: 800px) {
-    & {
-      width: 33.3333333%;
-    }
-    &:nth-child(3n+1) {
-      clear: left;
-    }
-    &:nth-child(odd) {
-      clear: none;
-    }
-  }
-
-  @media screen and (min-width: 1120px) {
-    & {
-       width: 20%;
-    }
-    &:nth-child(odd), &:nth-child(3n+1) {
-       clear: none;
-    }
-  }
-
-}*/
-.col-lg-2:hover {
+.col-lg-3:hover {
   background-color: #820808;
   border-top: 3px solid #610806;
   border-bottom: 3px solid #610806;
@@ -211,14 +132,14 @@ h2.tarif, h3.tarif, p.tarif, ul.tarif {
   margin: 0
 }
 h2.tarif {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 400;
-  margin: 0 0 0.5em;
+  margin: 0 0 3em;
 }
 h3.tarif {
-  font-size: 1.5em;
+  font-size: 1em;
   letter-spacing: 0.0625em;
-  margin: 0 0 0.3333333333333333em;
+  margin: 0 0 0.5em  ;
 }
 p.tarif {
   font-size: 0.875em;
@@ -236,21 +157,19 @@ ul.tarif {
     margin: 0 0 0.8333333333333333em;
   }
 }
-.buttonner {
-  background-color: #610806;
-  border-radius: 20px;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 700;
-  padding: 0.75em 1.5em;
-  position: absolute;
-  bottom: 1.25em;
-  left: 50%;
-  margin-left: -60px;
-  text-decoration: none;
-  width: 120px;
+.backbuttonner {
+    background-color: #610806;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1em;
+    padding: 0.75em 1.5em;
+    padding: 0.75em 1.5em;
+    margin-top: 2%;
 }
-.uppercase, .buttonner, h2.tarif {
+.ainscription {
+  color : white;
+}
+.uppercase, h2.tarif {
   text-transform: uppercase;
 }
 sup.tarif, .small {
