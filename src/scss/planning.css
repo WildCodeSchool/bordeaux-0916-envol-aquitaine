@@ -1,7 +1,30 @@
+.planning {
+  text-align: center;
+}
 
+.boutonpla  {
+  background-color: #c20000;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 1.25em;
+  left: 50%;
 
-.row {
-    /*margin-left: 75px;*/
+    margin-left: -15%;
+}
+
+a.boutonpla:hover {
+   color: #ffffff !important;
+
+ }
+
+ a.boutonpla {
+    color: #000000 !important;
+
+  }
+h2.planning {
+  color: black;
 }
 
 button {

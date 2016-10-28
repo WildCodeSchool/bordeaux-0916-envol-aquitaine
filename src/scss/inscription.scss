@@ -1,19 +1,12 @@
+.inscription {
+  text-align: center;
+}
+
 .telechargement {
   font-size: 22px;
   padding-top: 10px;
 padding-bottom: 10px;
 }
-
-
-
-/*
-html {
-  box-sizing: border-box;
-  height: 100%;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}*/
 .fond {
   background-color: #000000;
   background-repeat: no-repeat;
@@ -24,7 +17,7 @@ html {
   line-height: 1.5;
   padding: 2.5em 0;
 }
-.container {
+.tariff {
   margin: 0 auto;
   width: 90%;
   max-width: 1200px;
@@ -34,9 +27,9 @@ html {
   display: table;
   clear: both;
 }
-.grid-1-5 {
+.col-lg-3.inscription {
   border: 2px solid #610806;
-  min-height: 525px;
+  min-height: 205px;
   padding: 1.25em;
   position: relative;
   text-align: center;
@@ -74,47 +67,8 @@ html {
   }
 
 }
-.grid-1-5bas {
-  border: 2px solid #610806;
-  min-height: 250px;
-  padding: 1.25em;
-  position: relative;
-  text-align: center;
-  transition: all .2s ease-in-out;
 
-  @media screen and (min-width: 700px) {
-    & {
-      float: left;
-      width: 50%;
-    }
-    &:nth-child(odd) {
-      clear: left;
-    }
-  }
-
-  @media screen and (min-width: 800px) {
-    & {
-      width: 33.3333333%;
-    }
-    &:nth-child(3n+1) {
-      clear: left;
-    }
-    &:nth-child(odd) {
-      clear: none;
-    }
-  }
-
-  @media screen and (min-width: 1120px) {
-    & {
-       width: 20%;
-    }
-    &:nth-child(odd), &:nth-child(3n+1) {
-       clear: none;
-    }
-  }
-
-}
-.grid-1-5:hover {
+.col-lg-3.inscription:hover {
   background-color: #820808;
   border-top: 3px solid #610806;
   border-bottom: 3px solid #610806;
@@ -139,7 +93,7 @@ html {
     right: -2px;
   }
 
-  & .button {
+  & .buttonner {
     background-color: #0c0c0b;
 
   }
@@ -169,54 +123,55 @@ html {
     right: -2px;
   }
 
-  & .button {
+  & .buttonner {
     background-color: #0c0c0b;
 
   }
 }
-h2, h3, p, ul {
+h2.tarif, h3.tarif, p.tarif, ul.tarif {
   margin: 0
 }
-h2 {
-  font-size: 1em;
-  font-weight: 400;
-  margin: 0 0 0.5em;
-}
-h3 {
+h2.tarif {
   font-size: 1.5em;
-  letter-spacing: 0.0625em;
-  margin: 0 0 0.3333333333333333em;
+  font-weight: 400;
+  margin: 0 0 3em;
 }
-p {
+h3.tarif {
+  font-size: 1em;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.5em  ;
+}
+p.tarif {
   font-size: 0.875em;
 }
-p, ul {
+p.tarif, ul.tarif {
   margin:0 0 1.5em
 }
-ul {
+ul.tarif {
   color: #ffffff;
   font-size: 0.75em;
   list-style-type: none;
   padding: 0;
 
+  li.jour {
+    margin: 0 0 0.8333333333333333em;
+  }
 }
-.button {
-  background-color: #610806;
-  border-radius: 20px;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 700;
-  padding: 0.75em 1.5em;
-  position: absolute;
-  bottom: 1.25em;
-  left: 50%;
-  margin-left: -60px;
-  text-decoration: none;
-  width: 120px;
+.backbuttonner {
+    background-color: #610806;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1em;
+    padding: 0.75em 1.5em;
+    padding: 0.75em 1.5em;
+    margin-top: 2%;
 }
-.uppercase, .button, h2 {
+.ainscription {
+  color : white;
+}
+.uppercase, h2.tarif {
   text-transform: uppercase;
 }
-sup, .small {
+sup.tarif, .small {
   font-size: 0.6125em;
 }
