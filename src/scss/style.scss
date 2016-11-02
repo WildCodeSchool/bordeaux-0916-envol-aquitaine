@@ -213,3 +213,16 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
     width: 1134px;
 }
 }
+
+@media (max-width: 1140px){
+  #blockpage{
+    width: auto;
+}
+.fbbox {
+    box-shadow: none;
+    min-height: 85px;
+    width: 100%;
+    padding-top: 10px;
+    color: white;
+}
+}

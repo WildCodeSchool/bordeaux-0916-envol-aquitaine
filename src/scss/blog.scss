@@ -1,13 +1,24 @@
 @import 'colors';
 
-
 #blog {
+    button {
+        background-color: #B71C1C;
+        color: black;
+        height: 3em;
+    }
+
+    button:hover {
+        color: white;
+    }
+
     h1 {
         cursor: pointer;
     }
-.button{
-  width: 2px;
-}
+
+    .button {
+        width: 2px;
+    }
+
     ul.post-grid {
         margin: 0;
         padding: 0;
@@ -29,32 +40,50 @@
             }
         }
     }
+
     .content {
         width: 100%;
         position: relative;
         padding: 20px 40px;
     }
 
-    h2,
-    h3 {
+    h2{
         color: #B71C1C;
     }
+    h3{
+      color: black;
+    }
 
+    #littleImage {
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    text-angular {
+        button {
+            width: 1em;
+            height: 1em;
+        }
+    }
+
+    .row.post {
+        margin-bottom: 5em;
+    }
 
     .row.post:hover {
-
         -webkit-transition: 0.5s linear all;
         transition: 0.5s linear all;
         opacity: 1;
         padding-bottom: 30px;
-        background:#B71C1C;
-
+        background: #B71C1C;
+        color: white;
 
         cite {
             display: inline-block;
             padding: 10px 0;
         }
     }
+
     .post.ng-hide {
         opacity: 0;
     }
@@ -84,7 +113,11 @@
         border-color: green;
     }
 
+    .post.img {
+        width: 50%;
+        height:50%;
+    }
     img {
-        max-width: 100%;
+      max-width: 100%;
     }
 }

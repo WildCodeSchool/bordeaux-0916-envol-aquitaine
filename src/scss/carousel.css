@@ -7,14 +7,14 @@
 /*body { margin: 0; } */
 div#slider { overflow: hidden; }
 div#slider figure img { width: 20%; float: left; }
-div#slider figure{ 
+div#slider figure{
   position: relative;
   width: 500%;
   margin: 0;
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 30s linear slidy infinite; 
+  animation: 30s linear slidy infinite;
   -webkit-animation: slidy 30s linear infinite;
   -moz-animation: slidy 30s linear infinite;
   -ms-animation: slidy 30s linear infinite;
@@ -35,7 +35,7 @@ figure{
 
 div#slider {
   margin-right: -27px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 
@@ -48,13 +48,13 @@ div#slider {
 .prez-container{
 	color:#ffffff;
 	z-index:11;
-  /*margin-top: 15px;*/
+  margin-top: -5px;
   height: 425px;
   /*background-color:brown;*/
 }
 
 .prez-container h4{
-  padding-left:10px; 
+  padding-left:10px;
   /*padding-top:10px*/
   padding:5px;
   color:black;
@@ -84,7 +84,7 @@ div#slider {
   width: 0px;
   height: 0px;
   /*border-top: 440px solid #10bcf4;*/
-  border-top: 425px solid #F85A59;
+  border-top: 424px solid #F85A59;
   /*border-top: 425px solid #821313;*/
   /*border-top: 425px solid #bc5e43;*/
   /*border-top: 425px solid #F85556;*/
