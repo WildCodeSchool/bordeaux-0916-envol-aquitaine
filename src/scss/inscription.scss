@@ -176,6 +176,11 @@ ul.tarif {
 .ainscription {
   color : white;
 }
+.ainscription:hover {
+  color: #080808 !important;
+  text-decoration: none;
+  font-size: 1em;
+}
 .uppercase, h2.tarif {
   text-transform: uppercase;
 }

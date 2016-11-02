@@ -16,12 +16,18 @@
 
 a.boutonpla:hover {
    color: #ffffff !important;
+       text-decoration: none;
 
  }
 
  a.boutonpla {
     color: #000000 !important;
 
+  }
+
+  a:focus {
+    color: #ffffff !important;
+    text-decoration: none;
   }
 h2.planning {
   color: black;
