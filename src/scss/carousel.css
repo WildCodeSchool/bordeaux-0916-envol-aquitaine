@@ -7,14 +7,14 @@
 /*body { margin: 0; } */
 div#slider { overflow: hidden; }
 div#slider figure img { width: 20%; float: left; }
-div#slider figure{ 
+div#slider figure{
   position: relative;
   width: 500%;
   margin: 0;
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 30s linear slidy infinite; 
+  animation: 30s linear slidy infinite;
   -webkit-animation: slidy 30s linear infinite;
   -moz-animation: slidy 30s linear infinite;
   -ms-animation: slidy 30s linear infinite;
@@ -54,7 +54,7 @@ div#slider {
 }
 
 .prez-container h4{
-  padding-left:10px; 
+  padding-left:10px;
   /*padding-top:10px*/
   padding:5px;
   color:black;

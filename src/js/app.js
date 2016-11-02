@@ -58,7 +58,6 @@
     'app.home',
     'app.planning',
     'app.contactform',
-    'app.about',
     'app.organi',
     'app.blog',
     'app.inscription'
