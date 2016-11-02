@@ -3,55 +3,55 @@
     <section>
         <div class="container">
             <div class="board">
-                <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
+
                 <div class="board-inner row">
                     <ul class="nav nav-tabs" id="myTab">
                         <div class="liner"></div>
-                        <li class="active col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1">
+                        <li class="active col-xs-6 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-1">
                             <a ng-click="$ctrl.tab='pilates'" data-toggle="tab" title="">
                                 <figcaption class="Legende">PILATES</figcaption>
                                 <span class="round-tabs one">
-                                          <!-- <i class="glyphicon glyphicon-home"></i>-->
-                                          <img src="/img/circulartabs/fitnesspicto_rouge.png" />
+
+                                          <img src="/img/circulartabs/pilates2.png" />
                                   </span>
                             </a>
                         </li>
 
-                        <li class="col-sm-2 col-md-2">
+                        <li class="col-xs-6 col-sm-3 col-md-2">
                             <a ng-click="$ctrl.tab='fitness'" data-toggle="tab" title="">
                                 <figcaption class="Legende">FITNESS</figcaption>
 
                                 <span class="round-tabs two">
                                      <!-- <i class="glyphicon glyphicon-user"></i>-->
-                                     <img src="/img/circulartabs/gympicto_rouge.png" />
+                                     <img src="/img/circulartabs/fitness3.png" />
                                  </span>
                             </a>
                         </li>
-                        <li class="col-sm-2 col-md-2">
+                        <li class="col-xs-6 col-sm-2 col-md-2">
                             <a ng-click="$ctrl.tab='senior'" data-toggle="tab" title="">
                                 <figcaption class="Legende">GYM SENIOR</figcaption>
                                 <span class="round-tabs three">
                                       <!-- <i class="glyphicon glyphicon-gift"></i>-->
-                                      <img src="/img/circulartabs/pilatespicto_rouge.png" />
+                                      <img src="/img/circulartabs/senior2.png" />
                                  </span> </a>
                         </li>
 
-                        <li class="col-sm-2 col-md-2">
+                        <li class="col-xs-6 col-sm-2 col-md-2">
                             <a ng-click="$ctrl.tab='gaf'" data-toggle="tab" title="">
                                 <figcaption class="Legende">G.A.F</figcaption>
                                 <span class="round-tabs four">
                                           <!-- <i class="glyphicon glyphicon-comment"></i>-->
-                                          <img src="/img/circulartabs/Sport_rouge.png" />
+                                          <img src="/img/circulartabs/GAF.png" />
                                      </span>
                             </a>
                         </li>
 
-                        <li class="col-sm-2 col-md-2">
+                        <li class="col-xs-12 col-sm-2 col-md-2">
                             <a ng-click="$ctrl.tab='ptits'" data-toggle="tab" title="">
                                 <figcaption class="Legende">GYM DES P'TITS</figcaption>
                                 <span class="round-tabs five">
                                           <!-- <i class="glyphicon glyphicon-ok"></i>-->
-                                          <img src="/img/circulartabs/zumbapicto_rouge.png" />
+                                          <img src="/img/circulartabs/gympetits.png" />
                                      </span> </a>
                         </li>
 
@@ -60,7 +60,7 @@
 
                 <div class="tab-content">
                     <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='pilates'">
-                        <img src="/img/circulartabs/IMG_3202-sport.jpg" class="col-md-3" id="squall"/>
+                        <img src="/img/circulartabs/photopilates.png" class="hidden-xs col-md-3" id="squall"/>
                         <p class="narrow text-justify col-md-9">
                             La méthode Pilates, parfois simplement appelée Pilates est un système d’exercices physiques développé au début du XXème siècle par un passionné de sport et du corps humain Joseph Pilates. Le Pilates est pratiqué au tapis avec ou sans accessoires. Cette
                             méthode a pour objectif le développement des muscles profonds, l’amélioration de la posture, de l’équilibrage musculaire et l’assouplissement articulaire.</br>
@@ -71,7 +71,7 @@
                     </div>
 
                     <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='fitness'">
-                        <img src="/img/circulartabs/IMG_3202-sport.jpg" class="col-md-3" id="squall"/>
+                        <img src="/img/circulartabs/IMG_3202-sport.jpg" class="hidden-xs col-md-3" id="squall"/>
                         <p class="narrow text-justify col-md-9">
                             Le Fitness ou gymnastique de forme désigne un ensemble d’activités physiques visant à améliorer sa condition physique et son hygiène de vie dans un souci de bien être. Cours proposés à l’Envol d’Aquitaine : Renforcement Musculaire Cardio Fitness Circuit
                             Training
@@ -83,7 +83,7 @@
                     </div>
 
                     <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='senior'" id="messages">
-                        <img src="/img/circulartabs/IMG_3202-sport.jpg" class="col-md-3" id="squall"/>
+                        <img src="/img/circulartabs/photosenior.png" class="hidden-xs col-md-3" id="squall"/>
                         <p class="narrow text-justify col-md-9">
                             Ce cours est composé d’exercices de gymnastique adaptés aux séniors. Idéal pour préserver sa santé, renforcer sa masse musculaire, maintenir ou apprendre l’équilibre et conserver une certaine mobilité articulaire.
                         </br>
@@ -94,9 +94,9 @@
                     </div>
 
                     <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='gaf'" id="settings">
-                        <img src="/img/circulartabs/IMG_3202-sport.jpg" class="col-md-3" id="squall"/>
+                        <img src="/img/circulartabs/photogaf.png" class="hidden-xs col-md-3" id="squall"/>
                         <p class="narrow text-justify col-md-9">
-                            est une discipline olympique qui se pratique sur 4 agrès : saut de cheval, barres asymétriques, poutre et sol (dans l'ordre olympique). La GAF tient autant de l'art que du sport : au-delà de la performance physique, la maîtrise technique, la souplesse
+                            La gymnastique artistique féminine est une discipline olympique qui se pratique sur 4 agrès : saut de cheval, barres asymétriques, poutre et sol (dans l'ordre olympique). La GAF tient autant de l'art que du sport : au-delà de la performance physique, la maîtrise technique, la souplesse
                             et la grâce sont les qualités de la réussite. Les performances comportent également une part de chorégraphie au sol (en musique) et à la poutre. Les gymnastes se doivent aussi d'être rigoureuses et disciplinées pour atteindre
                             l'excellence.
                         </br>
@@ -107,7 +107,7 @@
                     </div>
 
                     <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='ptits'" id="doner">
-                        <img src="/img/circulartabs/IMG_3202-sport.jpg" class="col-md-3" id="squall"/>
+                        <img src="/img/circulartabs/photogympetit.png" class="hidden-xs col-md-3" id="squall"/>
                         <p class="narrow text-justify col-md-9">
                             Dès 3 ans à travers différents parcours les plus jeunes acquièrent les bases gymniques : ramper, courir, sauter, rouler, tourner, rebondir et s’équilibrer. L’encadrement est assuré par un professeur diplômé, accompagné de gymnastes du club. L’accessibilité à la pratique sportive
                             dès le plus jeune âge nous tient particulièrement à cœur car les enfants sont en plein éveil mental et physique, ils apprennent à situer leur corps dans l’espace et apprennent à vivre en société hors cadre scolaire ou familiale.</br>
