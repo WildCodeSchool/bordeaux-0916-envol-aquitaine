@@ -1,8 +1,22 @@
 @import 'colors';
 
-.blog {
+#blog {
+    button {
+        background-color: #B71C1C;
+        color: black;
+        height: 3em;
+    }
+
+    button:hover {
+        color: white;
+    }
+
     h1 {
         cursor: pointer;
+    }
+
+    .button {
+        width: 2px;
     }
 
     ul.post-grid {
@@ -33,33 +47,40 @@
         padding: 20px 40px;
     }
 
-    h2,
-    h3 {
+    h2{
         color: #B71C1C;
     }
+    h3{
+      color: black;
+    }
 
-    .post {
+    #littleImage {
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    text-angular {
+        button {
+            width: 1em;
+            height: 1em;
+        }
+    }
+
+    .row.post {
+        margin-bottom: 5em;
+    }
+
+    .row.post:hover {
         -webkit-transition: 0.5s linear all;
         transition: 0.5s linear all;
         opacity: 1;
         padding-bottom: 30px;
+        background: #B71C1C;
+        color: white;
 
         cite {
             display: inline-block;
             padding: 10px 0;
-        }
-    }
-
-    .comments {
-        ul {
-            margin: 0;
-            padding: 0;
-
-            li {
-                list-style-type: none;
-                padding: 20px 5px;
-                border-bottom: 1px #B71C1C solid;
-            }
         }
     }
 
@@ -92,7 +113,11 @@
         border-color: green;
     }
 
+    .post.img {
+        width: 50%;
+        height:50%;
+    }
     img {
-        max-width: 100%;
+      max-width: 100%;
     }
 }

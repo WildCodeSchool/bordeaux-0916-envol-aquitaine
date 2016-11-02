@@ -5,7 +5,6 @@
   "COMMON_HOME": "Home",
   "COMMON_BLOG": "Blog",
   "COMMON_PLANNING" : "Planning",
-  "COMMON_ABOUT": "About",
   "COMMON_CONTACT": "Contact",
   "COMMON_LOGOUT": "Logout",
   "COMMON_EDIT": "Edit",
@@ -17,5 +16,6 @@
   "COMMON_PASSWORD": "Password",
   "COMMON_EMAIL": "Email",
   "COMMON_FIRSTNAME": "Firstname",
-  "COMMON_LASTNAME": "Lastname"
+  "COMMON_LASTNAME": "Lastname",
+  "COMMON_INSCRIPTION": "Inscription"
 }

@@ -5,7 +5,6 @@
   "COMMON_HOME": "Accueil",
   "COMMON_BLOG": "Blog",
   "COMMON_PLANNING": "Planning",
-  "COMMON_ABOUT": "A propos",
   "COMMON_CONTACT": "Contact",
   "COMMON_ORGANI": "Team Envol",
   "COMMON_LOGOUT": "Déconnexion",
@@ -18,5 +17,6 @@
   "COMMON_PASSWORD": "Mot de passe",
   "COMMON_EMAIL": "Email",
   "COMMON_FIRSTNAME": "Prénom",
-  "COMMON_LASTNAME": "Nom"
+  "COMMON_LASTNAME": "Nom",
+  "COMMON_INSCRIPTION": "Inscription"
 }
