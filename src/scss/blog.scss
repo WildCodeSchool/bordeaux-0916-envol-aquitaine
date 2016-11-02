@@ -1,6 +1,9 @@
 @import 'colors';
 
 #blog {
+  #bouttonRetour{
+    margin-right:5em;
+  }
     button {
         background-color: #B71C1C;
         color: black;
@@ -77,6 +80,7 @@
         padding-bottom: 30px;
         background: #B71C1C;
         color: white;
+        cursor: pointer;
 
         cite {
             display: inline-block;
@@ -113,11 +117,9 @@
         border-color: green;
     }
 
-    .post.img {
+    img {
         width: 50%;
         height:50%;
     }
-    img {
-      max-width: 100%;
-    }
+
 }

@@ -9,13 +9,11 @@ h4 {
   display:inline;
 }
 #blogbox {
-    /*background: #f23232;*/
+    margin-left: 30px;
     box-shadow: 3px 3px 3px 3px #f23232, 3px 3px 3px 3px rgba(255,255,255,.15);
     min-height: 85px;
     width: 500px;
     padding-top: 10px;
-    /*border: 2px solid #ff0404;
-    /* margin: 0 1% 0 0; */
     max-height: 625px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
