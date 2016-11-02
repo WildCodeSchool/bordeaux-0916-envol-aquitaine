@@ -1,7 +1,8 @@
 #planning {
-.container{
+    h2.planning {
         color: black;
     }
+
     button {
         width: 150px;
         height: 70px;
@@ -11,7 +12,9 @@
         color: black;
         border-radius: 8px;
     }
+
     button:hover {
         color: white;
     }
+    text-align: center;
 }
