@@ -4,6 +4,7 @@
     button {
         background-color: #B71C1C;
         color: black;
+        height: 3em;
     }
 
     button:hover {
@@ -46,9 +47,11 @@
         padding: 20px 40px;
     }
 
-    h2,
-    h3 {
+    h2{
         color: #B71C1C;
+    }
+    h3{
+      color: black;
     }
 
     #littleImage {
@@ -110,7 +113,11 @@
         border-color: green;
     }
 
+    .post.img {
+        width: 50%;
+        height:50%;
+    }
     img {
-        max-width: 100%;
+      max-width: 100%;
     }
 }
