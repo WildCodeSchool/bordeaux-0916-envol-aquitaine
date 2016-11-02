@@ -37,6 +37,7 @@ padding-bottom: 10px;
 .col-lg-3.tarif{
   border: 2px solid #610806;
   min-height: 205px;
+  max-height: 205px;
   padding: 1.25em;
   position: relative;
   text-align: center;
@@ -175,6 +176,11 @@ ul.tarif {
 }
 .ainscription {
   color : white;
+}
+.ainscription:hover {
+  color: #080808 !important;
+  text-decoration: none;
+  font-size: 1em;
 }
 .uppercase, h2.tarif {
   text-transform: uppercase;
