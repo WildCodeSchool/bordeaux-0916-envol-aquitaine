@@ -54,8 +54,8 @@ div#slider {
 
 .prez-container h4{
   padding-left:10px;
-  /*padding-top:10px*/
-  padding:5px;
+  padding-top:0px;
+  margin-bottom: 0px;
   color:black;
   font-weight: bold;
 }
@@ -102,7 +102,7 @@ div#slider {
   width: 0px;
   height: 0px;
   /*border-top: 440px solid #10bcf4;*/
-  border-top: 424px solid #F85A59;
+  border-top: 421px solid #F85A59;
   /*border-top: 425px solid #821313;*/
   /*border-top: 425px solid #bc5e43;*/
   /*border-top: 425px solid #F85556;*/
