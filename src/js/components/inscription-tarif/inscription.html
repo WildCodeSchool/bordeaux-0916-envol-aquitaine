@@ -1,3 +1,4 @@
+<mininavbar edit-mode="$ctrl.editMode" ng-model="$ctrl.page"></mininavbar>
 <section class="inscription">
 
 
@@ -7,11 +8,12 @@
             <div class="col-lg-8 col-lg-offset-2 modalite">
 
               <img alt="" src="img/pilates.jpg" style="margin-left: 15%;" />
-                <h1><center> Quels sont les modalités pour s'inscrire ? </center></h1>
+              <!-- Quels sont les modalités pour s'inscrire ?-->
+                <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.title">{{$ctrl.page.content.title}}</h1>
               </br>
 
                 <ul>
-                    <li> Le CERTIFICAT MÉDICAL de « non contre indication à la pratique de la gymnastique » INDISPENSABLE POUR ACCÉDER AUX COURS.</li>
+                    <li><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.li1">{{$ctrl.page.content.li1}}</span></li>
 
                     <li> La photo d’identité pour les gymnastes en compétition</li>
 

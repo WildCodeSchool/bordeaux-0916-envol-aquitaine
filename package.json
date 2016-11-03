@@ -1,5 +1,5 @@
 {
-  "name": "tiny-mean-cms",
+  "name": "envol-aquitaine",
   "version": "1.0.0",
   "description": "",
   "author": "",
@@ -9,7 +9,7 @@
     "install": "node install.js",
     "postinstall": "bower install && brunch build --production",
     "prestart": "brunch build --production",
-    "start": "node tiny-mean-cms.js",
+    "start": "node envol-aquitaine.js",
     "dev": "brunch watch --server"
   },
   "dependencies": {

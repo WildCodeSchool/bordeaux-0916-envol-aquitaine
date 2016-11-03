@@ -1,0 +1,34 @@
+<section>
+    <div class="col-md-4 col-md-offset-4">
+        <h2 class="image header text-center">
+          Connectez-vous
+        </h2>
+        <form name="formConnect" class="form" ng-submit="$ctrl.connect()">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fa fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control" id="inputEmail" placeholder="email" ng-model="$ctrl.user.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" ng-required="true">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fa fa-asterisk"></i>
+                    </span>
+                    <input type="password" class="form-control" id="inputPass" placeholder="mot de passe" ng-model="$ctrl.user.password" ng-required="true">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-block" ng-disabled="formConnect.$invalid">Se connecter</button>
+        </form>
+        <div class="sub-form">
+          <div class="col-md-6">
+              <a ui-sref="app.home">Revenir au site</a>
+          </div>
+            <div class="col-md-6">
+                <a href="">Mot de passe oublié ?</a>
+            </div>
+        </div>
+    </div>
+</section>

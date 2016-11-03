@@ -60,5 +60,10 @@
     'app.contactform',
     'app.organi',
     'app.blog',
-    'app.inscription'
+    'app.inscription',
+    'app.login',
+    'app.dashboard',
+    'app.dashboard.summary',
+    'app.dashboard.users',
+    'app.dashboard.posts'
 ]))
