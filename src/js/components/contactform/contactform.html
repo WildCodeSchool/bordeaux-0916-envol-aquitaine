@@ -2,136 +2,126 @@
 <!--<div class="container concepts" style="background-color:#F63233">-->
 <!--<div class="container concepts" style="background-image:url('img/fond-contactpage.jpg')">-->
 
-  <div class="col-md-9">
-    <h1 style="color:black;font-weight:bold;margin-top:15px"> Contactez-nous !</h1>
-    <p style="color:white;text-align:justify;line-height:30px;padding-bottom:5px;font-weight: bold;">
+  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+    <!--<h1 style="color:black;font-weight:normal;margin-top:15px"> Contactez-nous !</h1>-->
+    <h1 style="color:white;font-weight:normal;margin-top:15px"> Contactez-nous !</h1>
+    <!--<p style="color:black;text-align:justify;line-height:30px;padding-bottom:5px;font-weight: bold;">-->
+    <!--<p style="color:white;text-align:justify;line-height:30px;padding-bottom:5px;font-weight: bold;">-->
+    <!--<p style="color:black;text-align:justify;line-height:30px;padding-bottom:5px;font-weight: bold;">
       At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
       voluptatum deleniti atque corrupti quos dolores et quas feugiat. Et harum quidem rerum
       facilis est et expedita distinctio lorem ipsum
       dolor sit amet, consectetur adipiscing elit landitiis.
-    </p>
+    </p>-->
 
     <br>
 
-
-<!--
-    <form name="form" action="mailto:oussou.dev@gmail.com" method="post" novalidate>
-      <div class="row" style="margin-bottom:20px">
-          <div class="col-md-6 col-md-offset-0">
-              <span class="icon-case"><i class="fa fa-user color-contact-primary"></i></span>
-              <input class="form-control" type="text" placeholder="Nom" required>
-          </div>
-
-          <div class="col-md-6 col-md-offset-0">
-              <span class="icon-case"><i></i></span>
-              <input class="form-control" type="text" placeholder="Prénom" required>
-          </div>
-      </div>
-
-      <div class="row" style="margin-bottom:20px">
-          <div class="col-md-6 col-md-offset-0">
-              <span class="icon-case"><i class="fa fa-envelope color-contact-primary"></i></span>
-                <input class="form-control" type="email" placeholder="Email">
-          </div>
-
-          <div class="col-md-6 col-md-offset-0" style="margin-bottom:10px">
-              <span class="icon-case"><i class="fa fa-phone color-contact-primary"></i></span>
-              <input class="form-control" type="text" placeholder="Phone">
-          </div>
-      </div>
+    <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate> 
+      <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
 
 
       <div class="row" style="margin-bottom:20px">
-          <div class="col-md-12 col-md-offset-0">
-            <span class="icon-case"><i class="fa fa-pencil color-contact-primary"></i></span>
-            <textarea name="message" rows="12" class="form-control" placeholder="Message"></textarea>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-0 col-lg-6">
+          <!-- NAME -->
+          <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+            <!--<label>Name</label>-->
+            <span class="icon-case"><i class="fa fa-user" style="color:black"></i></span>
+            <!--<span class="icon-case"><i class="fa fa-user color-contact-white"></i></span>-->
+            <!--<span class="icon-case"><i class="fa fa-user color-contact-primary"></i></span>-->
+            <input type="text" name="name" class="form-control" ng-model="$ctrl.user.name" placeholder="Nom" required >
+            <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block" style="color:black;font-weight:bold"> Un nom est requis !</p>
           </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-0 col-lg-6">
+          <!-- FIRST NAME -->
+          <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
+            <!--<label>Prénom</label>-->
+            <span class="icon-case"><i class=""></i></span>
+            <input type="text" name="firstname" class="form-control" ng-model="$ctrl.user.firstname" placeholder="Prénom" required>
+            <p ng-show="userForm.firstname.$invalid && !userForm.firstname.$pristine" class="help-block" style="color:black;font-weight:bold"> Un prénom est requis !</p>
+          </div>
+        </div>
       </div>
 
-      <p>
-        <span type="submit" class="pull-left btn color-contact-primary" ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid">
-          Send Message
-        </span>
-      </p>
-
-  </form>
-  <!End Contact Form
-  </div>
-  /md9
--->
-
-    <form name="formcontact" action="mailto:oussou.dev@gmail.com" method="post" novalidate>
-      <div class="row" style="margin-bottom:20px">
-          <div class="col-md-6 col-md-offset-0">
-              <span class="icon-case"><i class="fa fa-user color-contact-white"></i></span>
-              <input class="form-control" type="text" placeholder="Nom" ng-model="nom" ng-model-options="{ updateOn: 'blur' }" required pattern=".{2,}">
-
-          </div>
-
-          <div class="col-md-6 col-md-offset-0">
-              <span class="icon-case"><i></i></span>
-              <input class="form-control" type="text" placeholder="Prénom" required>
-          </div>
-      </div>
 
       <div class="row" style="margin-bottom:20px">
-          <div class="col-md-6 col-md-offset-0">
-              <span class="icon-case"><i class="fa fa-envelope color-contact-white"></i></span>
-                <input class="form-control" type="email" placeholder="Email">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-0 col-lg-6">
+          <!-- EMAIL -->
+          <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+            <!--<label>Email</label>-->
+            <span class="icon-case"><i class="fa fa-envelope" style="color:black" ></i></span>
+            <!--<span class="icon-case"><i class="fa fa-envelope color-contact-white"></i></span>-->
+            <!--<span class="icon-case"><i class="fa fa-envelope color-contact-primary"></i></span>-->
+            <input type="email" name="email" class="form-control" ng-model="$ctrl.user.email" placeholder="Email">
+            <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block" style="color:black;font-weight:bold"> Mail invalide !</p>
           </div>
+        </div>
 
-          <div class="col-md-6 col-md-offset-0" style="margin-bottom:10px">
-              <span class="icon-case"><i class="fa fa-phone color-contact-white"></i></span>
-              <input class="form-control" type="text" placeholder="Phone">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-0 col-lg-6" style="margin-bottom:10px">
+          <!-- PHONE -->
+          <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+            <span class="icon-case"><i class="fa fa-phone" style="color:black"></i></span>
+            <!--<span class="icon-case"><i class="fa fa-phone color-contact-white"></i></span>-->
+            <!--<span class="icon-case"><i class="fa fa-phone color-contact-primary"></i></span>-->
+            <input class="form-control" type="text" name="phone" ng-model="$ctrl.user.phone" placeholder="Phone">
+          </div>  
+        </div>  
+      </div>
+
+      <!-- MESSAGE -->
+      <div class="row" style="margin-bottom:20px" class="form-group" ng-class="{ 'has-error' : userForm.message.$invalid && !userForm.message.$pristine }">
+          <div class="col-md-12 col-md-offset-0 col-lg-12">
+            <span class="icon-case"><i class="fa fa-pencil" style="color:black"></i></span>
+            <!--<span class="icon-case"><i class="fa fa-pencil color-contact-white"></i></span>-->
+            <!--<span class="icon-case"><i class="fa fa-pencil color-contact-primary"></i></span>-->
+            <p ng-show="userForm.message.$error.maxlength" class="help-block" style="color:black;font-weight:bold"> Le texte saisi est trop long !</p>
+            <p ng-show="userForm.message.$error.minlength" class="help-block" style="color:black;font-weight:bold"> Le texte saisi est trop court !</p>
+            <textarea name="message" rows="12" class="form-control" placeholder="Message" ng-model="message.email" ng-minlength="10" ng-maxlength="255" required="true"></textarea>
           </div>
       </div>
 
-      <div class="row" style="margin-bottom:20px">
-          <div class="col-md-12 col-md-offset-0">
-            <span class="icon-case"><i class="fa fa-pencil color-contact-white"></i></span>
-            <textarea name="message" rows="12" class="form-control" placeholder="Message"></textarea>
-          </div>
+      <!-- SUBMIT BUTTON -->
+      <div>
+        <!--<p type="submit" value="" class="btn btn-contact-red" ng-disabled="userForm.$invalid" ng-click="subitForm()"> Envoyer </p>-->
+        <p type="submit" value="" class="btn" ng-disabled="userForm.$invalid" ng-click="$ctrl.submitForm()" style="margin-left:15px;color:black"> Envoyer </p>
       </div>
 
-      <p>
-        <span type="submit" ng-disabled="form.$invalid" class="pull-left btn btn-default" style="background-color:white" ng-disabled="contactform.user.$dirty && contactform.user.$invalid || contactform.email.$dirty && contactform.email.$invalid">
-          <strong style="color:black">Envoyer</strong>
-        </span>
-      </p>
-
-  </form>
-  <!-- End Contact Form -->
-  </div>
-  <!-- /md9 -->
+    </form>
+    
+  </div> <!-- /md9 -->
 
   <!-- Contact Side -->
-  <div class="col-md-3">
+  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
     <div class="panel panel-default" style="margin-top:20px">
       <div class="panel-heading">
           <h3 class="panel-title">Permanence</h3>
       </div>
       <div class="panel-body">
-        <p style="text-align:justify;margin-bottom:15px;">
+        <!--<p style="text-align:justify;margin-bottom:15px;">
           Lorem ipsum dolor sit amet, no cetero voluptatum est, audire sensibus maiestatis vis et.
           Vitae audire prodesset an his. Nulla ubique omnesque in sit.
-        </p>
+        </p>-->
 
-        <ul class="list-unstyled">
-            <li>
-                <span class="color-contact-primary"> <strong> Mercredi :</strong> </span>
-                <span style="font-size:13px">de 14h à 19h</span>
-            </li>
-            <br>
-            <li>
-                <i class="fa fa-phone color-contact-primary"></i>
-                <span style="margin-left:20px;font-size:13px"> 05 56 91 89 48 </span>
-            </li>
-            <br>
-            <li>
-                <i class="fa fa-envelope color-contact-primary"></i>
-                <span style="margin-left:20px;font-size:13px">envol.d.aquitaine@gmail.com</span>
-            </li>
-        </ul>
+        <span> <strong class="color-contact-primary"> Mercredi : </strong> de 14h à 19h</span> 
+
+        <br><br>
+
+        <!--<i class="fa fa-phone" style="color:black">  </i>-->
+        <i class="fa fa-phone color-contact-primary">  </i>
+        <span style="margin-left:20px;font-size:13px"> 05 56 91 89 48 </span>
+
+        <br><br>
+
+        <!--<i class="fa fa-envelope" style="color:black">  </i>-->
+        <i class="fa fa-envelope color-contact-primary">  </i>
+        <span style="margin-left:20px;font-size:13px">envol.d.aquitaine@gmail.com</span>
+
+        <br><br>
+
+        <i class="fa fa-facebook color-contact-primary">  </i>
+        <span style="margin-left:20px;font-size:13px">facebook.com/envolaquitaine</span>
+
       </div>
     </div>
 
@@ -142,7 +132,7 @@
       </div>
 
       <div class="panel-body">
-        <strong>Association sportive</strong><br>
+        <strong class="color-contact-primary">Association sportive</strong><br>
         <span>4bis Rue des Douves <br> 33000 Bordeaux</span>
         <br> <br>
         <span> <strong class="color-contact-primary">Siret : </strong> 377 581 533 00025</span> <br><br>
@@ -154,30 +144,31 @@
   </div>
   <!-- /md3 contact side -->
 
-</div>
+<!--</div>-->
 <!-- /container -->
 
-<br>
 
 <!-- Google Maps + Indications -->
 <!--<div class="container concepts" style="background-image:url('img/fond-contactpage.jpg'); margin-bottom:15px">-->
 <!--<div class="container concepts" style="margin-top:-21px;background-color:#F63233">-->
-<div class="container concepts" style="margin-top:-21px;background-color:#F85A59">
-    <div class="col-md-12">
-    <h1 style="color:black;font-weight:bold;margin-top:15px"> Se rendre au Gymnase ...</h1>
-      <p style="color:white;text-align:justify;line-height:30px;padding-bottom:5px;font-weight: bold;">
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-        voluptatum deleniti atque corrupti <br> quos dolores et quas feugiat. Et harum quidem rerum
-        facilis est et expedita distinctio lorem ipsum
-        dolor sit amet, consectetur <br> adipiscing elit landitiis.
+<!--<div class="container concepts" style="margin-top:-21px;background-color:#F85A59">-->
+<!--<div class="container concepts" style="margin-top:-21px;background-color:white">-->
+    <div class="col-xs-12 col-md-12 col-md-12 col-lg-12" style="margin-top:40px">
+      <!--<h1 style="color:black;font-weight:normal;margin-top:15px"> Se rendre au Gymnase ...</h1>-->
+      <h1 style="color:white;font-weight:normal;margin-top:15px"> Se rendre au Gymnase ...</h1>
+      <!--<p style="color:white;text-align:justify;line-height:30px;padding-bottom:5px;font-weight: bold;">-->
+      <p style="color:black;padding-left:15px;line-height:30px;padding-bottom:5px;font-weight: bold;">
+        * Ligne de bus : 15 / 20/ 47 / 11 / 1 <br>
+        * Arrêts de tram : Tram C  Saint Michel / Tram B  Victoire <br>
+        * Station VCub : Rue des Menuts et à l’angle de la place des Capucins et du Cours de la Marne
       </p>
     </div>
 
     <!--<br><br>-->
 
-    <div class="row" style="margin-top:-21px;margin-bottom:25px">
+    <div class="row" style="margin-bottom:25px">
         <!--maps-->
-        <div class="col-xs-12 col-md-6" style="">
+        <div class="xs-hidden sm-hidden col-md-6 col-lg-6" style="">
           <div class="map-responsive">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.5588950517963!2d-0.5679845849340132!3d44.83055027909866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55264b204c35e5%3A0xdf02ecaf514d5455!2sGymnase+Envol+d&#39;Aquitaine!5e0!3m2!1sfr!2sfr!4v1476366263693" frameborder="0" style="border:0" allowfullscreen>
             </iframe>
@@ -185,11 +176,11 @@
         </div>
 
         <!--entree img -->
-        <div class="col-xs-12 col-md-6" style="">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="">
           <div class="map-responsive">
             <img src="img/carousel/8-bis.jpg" alt="envol">
           </div>
         </div>
-      </div>
+    </div>
 </div>
 <!-- /container -->
