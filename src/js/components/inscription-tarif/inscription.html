@@ -9,19 +9,19 @@
 
               <img alt="" src="img/pilates.jpg" style="margin-left: 15%;" />
               <!-- Quels sont les modalités pour s'inscrire ?-->
-                <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.title">{{$ctrl.page.content.title}}</h1>
+                <h1 style="text-align:center;" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.title">{{$ctrl.page.content.title}}</h1>
               </br>
 
                 <ul>
                     <li><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.li1">{{$ctrl.page.content.li1}}</span></li>
 
-                    <li> La photo d’identité pour les gymnastes en compétition</li>
+                    <li><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.li2">{{$ctrl.page.content.li2}}</span></li>
 
-                    <li> La fiche de renseignement remplie et signée par le responsable légal pour les mineurs. </li>
+                    <li><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.li3">{{$ctrl.page.content.li3}}</span></li>
 
-                    <li> La demande de licence (à faire sur place). </li>
+                    <li><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.li4">{{$ctrl.page.content.li4}}</span></li>
 
-                    <li> Le règlement de la cotisation en 1, 2, 3, 4, 5, 6 chèques à l’ordre de l’Envol d’Aquitaine. </li>
+                    <li><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.li5">{{$ctrl.page.content.li5}}</span></li>
 
                 </ul>
 
@@ -46,29 +46,27 @@
             <div class="row">
 
                 <div class="col-lg-3 tarif" style="margin-left: 10%;">
-                    <h3 class="tarif">Formule 1 </h3>
+                    <h3 class="tarif" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.formule1">{{$ctrl.page.content.formule1}}></h3>
 
-                    <h2 class="tarif">Pilates</h2>
-                    <h3 class="tarif"><span class="uppercase">200 € + licence</span></h3>
-                      <p class="tarif"> 1 à 4 cours/semaine </p>
-
-                </div>
-
-                <div class="col-lg-3 tarif">
-                    <h3 class="tarif">Formule 2 </h3>
-
-                    <h2 class="tarif">Fitness</h2>
-                    <h3 class="tarif"><span class="uppercase">180 € + licence</span></h3>
-<p class="tarif"> 1 à 4 cours/semaine </p>
+                    <h2 class="tarif" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.pilates">{{$ctrl.page.content.pilates}}></h2>
+                    <h3 class="tarif"><span class="uppercase" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.licence1">{{$ctrl.page.content.licence1}}></span></h3>
+                      <p class="tarif"><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.cours1">{{$ctrl.page.content.cours1}}></span></p>
 
                 </div>
 
                 <div class="col-lg-3 tarif">
-                    <h3 class="tarif">Formule 3 </h3>
+                    <h3 class="tarif" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.numero2">{{$ctrl.page.content.numero2}}></span></h3>
+                    <h2 class="tarif" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.fitness">{{$ctrl.page.content.fitness}}></span></h2>
+                    <h3 class="tarif"><span class="uppercase" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.licence2">{{$ctrl.page.content.licence2}}></span></h3>
+  <p class="tarif"><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.cours2">{{$ctrl.page.content.cours2}}></span></p>
 
-                    <h2 class="tarif">Seniors</h2>
-                    <h3 class="tarif"><span class="uppercase">110 € + licence</span></h3>
-<p class="tarif"> 1 cours/semaine </p>
+                </div>
+
+                <div class="col-lg-3 tarif">
+                      <h3 class="tarif" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.numero3">{{$ctrl.page.content.numero3}}></span></h3>
+                    <h2 class="tarif" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.senior">{{$ctrl.page.content.senior}}></span></h2>
+                    <h3 class="tarif"><span class="uppercase" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.licence3">{{$ctrl.page.content.licence3}}></span></h3>
+  <p class="tarif"><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.cours3">{{$ctrl.page.content.cours3}}></span></p>
 
                 </div>
 
@@ -76,41 +74,38 @@
 
 
                 <div class="col-lg-3 tarif">
-
-                    <h2 class="tarif">Pass Envol</h2>
-                    <h3 class="tarif"><span class="uppercase">230 € + licence</span></h3>
-                    <p class="tarif"> Permet d'accèder aux 3 menus </p>
-                    <p class="tarif"> 1 à 9 cours/semaine </p>
+    <h3 class="tarif"> <span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.numero4">{{$ctrl.page.content.numero4}}></span></h3>
+                      <h2 class="tarif" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.passenvol">{{$ctrl.page.content.passenvol}}></span></h2>
+                    <h3 class="tarif" class="uppercase" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.licence4">{{$ctrl.page.content.licence4}}></span></h3>
+<p class="tarif"><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.cours4">{{$ctrl.page.content.cours4}}></span></p>
 
                 </div>
             </div>
             <div class="row">
 
                 <div class="col-lg-3 tarif" style="margin-left: 17%;">
-                    <h2 class="tarif">Ecole de Gym </br> 6 - 18 ans</h2>
+                    <h2 class="tarif" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.ecoledegym">{{$ctrl.page.content.ecoledegym}}></span></h2>
+                  <h3 class="tarif" class="uppercase" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.licence5">{{$ctrl.page.content.licence5}}></span></h3>
+                  <p class="tarif"><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.cours5">{{$ctrl.page.content.cours5}}></span></p>
 
-                    <h3 class="tarif"><span class="uppercase">160 € + licence</span></h3>
 
-                    <p class="tarif"> 1 cours/semaine </p>
 
 
                 </div>
 
                 <div class="col-lg-3 tarif">
+<h2 class="tarif" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.gymcomp">{{$ctrl.page.content.gymcomp}}></span></h2>
+  <h3 class="tarif" class="uppercase" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.licence6">{{$ctrl.page.content.licence6}}></span></h3>
+          <p class="tarif"><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.cours6">{{$ctrl.page.content.cours6}}></span></p>
 
-                    <h2 class="tarif">Gymnastique</br> Compétition</h2>
-                    <h3 class="tarif"><span class="uppercase">210 € + licence</span></h3>
 
-
-  <p class="tarif"> 2 à 3 cours/semaine </p>
                 </div>
 
                 <div class="col-lg-3 tarif">
+<h2 class="tarif"><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.gymdespetits">{{$ctrl.page.content.gymdespetits}}></span></h2>
+                    <h3 class="tarif"><span class="uppercase" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.licence7">{{$ctrl.page.content.licence7}}></span></h3>
+                    <p class="tarif"><span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.cours7">{{$ctrl.page.content.cours7}}></span></p>
 
-                    <h2 class="tarif">Gym des Petits</h2>
-                    <h3 class="tarif"><span class="uppercase">145 € + licence</span></h3>
-
-  <p class="tarif"> 1 cours/semaine </p>
                 </div>
 
             </div>

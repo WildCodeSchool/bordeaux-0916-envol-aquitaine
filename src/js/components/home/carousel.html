@@ -1,14 +1,11 @@
-
-<!--<div style="background-image: url(/img/backprez3.jpg); background-repeat: repeat-x;">-->
-    <!--<div style="background-color:#F63233">-->
-
-    <!--<div style="background-color:#821313">-->
+<mininavbar edit-mode="$ctrl.editMode" ng-model="$ctrl.page"></mininavbar>
     <div style="background-color:#F85A59;margin-bottom:-12px">
 
     <!--<div style="background-image:url('img/fond-contactpage.jpg')">-->
         <div style="min-height:432px">
             <div class="col-lg-5 prez-container">
-                <h4>Présentation</h4>
+                <h4 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.title">{{$ctrl.page.content.title}}</h4>
+
                 <p>
                     Eiusmod cupidatat ea sit ex pariatur pariatur amet esse duis. Eiusmod cupidatat ea sit ex pariatur pariatur amet esse duis.
                 </p>
