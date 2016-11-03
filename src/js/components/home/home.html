@@ -4,15 +4,15 @@
     <!--CAROUSEL-->
 
     <div class="container">
-      <carousel/>
-      <circulartabs />
+      <carousel edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.carousel" />
+      <circulartabs edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.circulartabs"></circulartabs >
     </div>
 
     <!-- Actualités -->
     <div class="container actu">
         <div class="row concepts">
-            <actualitesfb class="col-sm-6" />
-            <actualitesblog class="col-sm-6" />
+            <actualitesfb edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.fb" class="col-sm-6" />
+            <actualitesblog edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.blog" class="col-sm-6" />
         </div>
     </div>
 

@@ -34,7 +34,7 @@ figure{
 }
 
 div#slider {
-  margin-right: -27px;
+  margin-right: -18px;
   margin-top: 0px;
 }
 
@@ -61,18 +61,37 @@ div#slider {
 }
 
 
-.prez-container p{
-  color:white;
+/*.prez-container p{
+  color:white;*/
   /*font-weight:500;*/
-  font-weight: bold;
+  /*font-weight: bold;
   text-align:justify;
-  padding-left:5px;
+  padding-left:5px;*/
   /*padding-bottom:5px;*/
-  line-height:30px;
+  /*line-height:30px;
   color:white;
   text-align:justify;
-  padding-bottom:5px;
+  padding-bottom:5px;*/
+/*}*/
+
+
+
+.prez-container p {
+  color: white;
+  /* color: black; */
+  /* font-weight: 500; */
+  /* font-weight: bold; */
+  text-align: justify;
+  padding-left: 5px;
+  /* padding-bottom: 0px; */
+  line-height: 19px;
+  /* padding-bottom: 5px; */
 }
+
+
+
+
+
 
 
 .prez-container:after{
@@ -101,8 +120,8 @@ div#slider {
 
 .frame-k img {
 /*margin-left: -55px;*/
-transform: skewX(-20deg);
-border-left: 10px solid #fff;
+/*transform: skewX(-20deg);
+border-left: 10px solid #fff;*/
 /*box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);*/
 /*transform: skewX(-20deg);*/
 }

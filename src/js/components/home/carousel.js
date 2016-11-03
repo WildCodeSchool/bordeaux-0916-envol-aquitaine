@@ -1,14 +1,12 @@
 ((app) => {
     'use strict'
     app.component("carousel", {
-        templateUrl: 'js/components/home/carousel.html',
-        controller: [function() {
-            angular.extend(this, {
-                page: {
-                    name: 'carousel',
-                    content: {}
-                }
-            })
-        }]
+
+        bindings: {
+            editMode:"<",
+            ngModel: "="
+        },
+        templateUrl: 'js/components/home/carousel.html'
+
     })
 })(angular.module('app.home'))
