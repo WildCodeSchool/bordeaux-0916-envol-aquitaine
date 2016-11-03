@@ -1,5 +1,16 @@
 @import 'colors';
 /* navbar */
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .container.navbar{ position: absolute;
+    right: 5px;
+    z-index: 4;
+  }
+
+}
+
+
+
+
 .navbar {
     /*background-color: $primary;*/
     border: none;
@@ -35,7 +46,8 @@
 .navbar-default .navbar-toggle .icon-bar,
 button.navbar-default,
 button.navbar-toggle:hover {
-    background-color: $white !important;
+    background-color: #1f1717 !important;
+    border-color: #333;
 }
 
 button.navbar-default > .icon-bar,
@@ -45,9 +57,11 @@ button.navbar-toggle:hover > .icon-bar {
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: $white;
+
+
     }
 }
 
 .navbar-default .navbar-toggle {
-    border-color: $white;
+    border-color: #080808;
 }

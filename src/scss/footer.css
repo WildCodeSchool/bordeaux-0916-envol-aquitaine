@@ -1,4 +1,12 @@
 /* Footer Menu */
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  #carousel-example-1 { display: none; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  #carousel-example-1 { display: block; }   /* hide it elsewhere */
+}
+
 #footer {
   color: #444;
   color: rgba(0, 0, 0, 0.5);
