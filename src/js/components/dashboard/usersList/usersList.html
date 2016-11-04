@@ -1,6 +1,6 @@
 <section class="edit">
-    <div class="container">
-      <a class="btn warning btn-floating bottom" ui-sref="app.dashboard.summary"><i class="fa fa-mail-reply"></i></a>
+    <div class="container margeglobal">
+      <a class="btn warning btn-floating bottom retourenarriere" ui-sref="app.dashboard.summary"><i class="fa fa-mail-reply"></i></a>
       <div class="row">
           <h2 class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             {{'USERSLIST_TITLE' | translate}} ({{$ctrl.users.length}})
@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="cards row">
-          <div class="card hover col-xs-12 col-sm-12 col-md-3 col-lg-3" ng-repeat="user in $ctrl.users | limitTo:4:$ctrl.startIndex " ng-class="{'selected': $ctrl.selectedUser == user}" ng-click="$ctrl.edit(user)">
+          <div class="card hover col-xs-12 col-sm-12 col-md-3 col-lg-3 marge" ng-repeat="user in $ctrl.users | limitTo:4:$ctrl.startIndex " ng-class="{'selected': $ctrl.selectedUser == user}" ng-click="$ctrl.edit(user)">
               <button class="btn danger col-sm-5 col-sm-offset-2" ng-click="$ctrl.delete($index, user)"> <i class="fa fa-trash"></i></button>
               <div class="row card-content">
                   <div class="col-xs-3">

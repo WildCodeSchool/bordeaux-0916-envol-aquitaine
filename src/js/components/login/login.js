@@ -9,8 +9,9 @@
                         $translate('COMMON_WELCOME').then((translate) => {
                             toastr.success(`${translate} ${(res.user.firstname || '') + ' ' + (res.user.lastname || '')} !`)
                         })
-                        $state.go('app.home')
+                        $state.go('app.dashboard.summary')
                     }).catch((res) => {
+                      debugger
                         $translate('COMMON_TRY_AGAIN').then((translate) => {
                             toastr.error(translate)
                         })
