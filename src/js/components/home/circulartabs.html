@@ -59,62 +59,56 @@
                 </div>
 
                 <div class="tab-content">
-                    <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='pilates'">
+                    <div class="row tab-pane fade in active" ng-show="$ctrl.tab==='pilates'">
                         <img src="/img/circulartabs/photopilates.png" class="hidden-xs col-md-3" id="squall"/>
-                        <p class="narrow text-justify col-md-9">
-                            La méthode Pilates, parfois simplement appelée Pilates est un système d’exercices physiques développé au début du XXème siècle par un passionné de sport et du corps humain Joseph Pilates. Le Pilates est pratiqué au tapis avec ou sans accessoires. Cette
-                            méthode a pour objectif le développement des muscles profonds, l’amélioration de la posture, de l’équilibrage musculaire et l’assouplissement articulaire.</br>
-                            </br>
+                        <p class="narrow text-justify col-md-9" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.parapilate">{{$ctrl.ngModel.parapilate}}</p>
+
+                        <p class="narrow text-justify">
                             <a ui-sref="app.planning" class="btn btn-success btn-outline-rounded green"> Planning <span style="margin-left:10px;"></span></a>
                             <a ui-sref="app.inscription" class="btn btn-success btn-outline-rounded green"> Inscription <span style="margin-left:10px;"></span></a>
                         </p>
                     </div>
 
-                    <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='fitness'">
+                    <div class="row tab-pane fade in active" ng-show="$ctrl.tab==='fitness'">
                         <img src="/img/circulartabs/IMG_3202-sport.jpg" class="hidden-xs col-md-3" id="squall"/>
-                        <p class="narrow text-justify col-md-9">
-                            Le Fitness ou gymnastique de forme désigne un ensemble d’activités physiques visant à améliorer sa condition physique et son hygiène de vie dans un souci de bien être. Cours proposés à l’Envol d’Aquitaine : Renforcement Musculaire Cardio Fitness Circuit
-                            Training
-                        </br>
-                        </br>
+                        <p class="narrow text-justify col-md-9" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.parafit">{{$ctrl.ngModel.parafit}}</p>
+
+                        <p class="narrow text-justify">
                             <a ui-sref="app.planning" class="btn btn-success btn-outline-rounded green"> Planning <span style="margin-left:10px;"></span></a>
                             <a ui-sref="app.inscription" class="btn btn-success btn-outline-rounded green"> Inscription <span style="margin-left:10px;"></span></a>
                         </p>
                     </div>
 
-                    <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='senior'" id="messages">
+                    <div class="row tab-pane fade in active" ng-show="$ctrl.tab==='senior'" id="messages">
                         <img src="/img/circulartabs/photosenior.png" class="hidden-xs col-md-3" id="squall"/>
-                        <p class="narrow text-justify col-md-9">
-                            Ce cours est composé d’exercices de gymnastique adaptés aux séniors. Idéal pour préserver sa santé, renforcer sa masse musculaire, maintenir ou apprendre l’équilibre et conserver une certaine mobilité articulaire.
-                        </br>
-                        </br>
-                        <a ui-sref="app.planning" class="btn btn-success btn-outline-rounded green"> Planning <span style="margin-left:10px;"></span></a>
-                        <a ui-sref="app.inscription" class="btn btn-success btn-outline-rounded green"> Inscription <span style="margin-left:10px;"></span></a>
+                        <p class="narrow text-justify col-md-9" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.parasenior">{{$ctrl.ngModel.parasenior}}</p>
+
+                        <p class="narrow text-justify">
+                            <a ui-sref="app.planning" class="btn btn-success btn-outline-rounded green"> Planning <span style="margin-left:10px;"></span></a>
+                            <a ui-sref="app.inscription" class="btn btn-success btn-outline-rounded green"> Inscription <span style="margin-left:10px;"></span></a>
                         </p>
                     </div>
 
-                    <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='gaf'" id="settings">
+                    <div class="row tab-pane fade in active" ng-show="$ctrl.tab==='gaf'" id="settings">
                         <img src="/img/circulartabs/photogaf.png" class="hidden-xs col-md-3" id="squall"/>
-                        <p class="narrow text-justify col-md-9">
-                            La gymnastique artistique féminine est une discipline olympique qui se pratique sur 4 agrès : saut de cheval, barres asymétriques, poutre et sol (dans l'ordre olympique). La GAF tient autant de l'art que du sport : au-delà de la performance physique, la maîtrise technique, la souplesse
-                            et la grâce sont les qualités de la réussite. Les performances comportent également une part de chorégraphie au sol (en musique) et à la poutre. Les gymnastes se doivent aussi d'être rigoureuses et disciplinées pour atteindre
-                            l'excellence.
-                        </br>
-                        </br>
-                        <a ui-sref="app.planning" class="btn btn-success btn-outline-rounded green"> Planning <span style="margin-left:10px;"></span></a>
-                        <a ui-sref="app.inscription" class="btn btn-success btn-outline-rounded green"> Inscription <span style="margin-left:10px;"></span></a>
-                        </p>
+                        <p class="narrow text-justify col-md-9" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.paragaf">{{$ctrl.ngModel.paragaf}}</p>
+
+
+                            <p class="narrow text-justify">
+                                <a ui-sref="app.planning" class="btn btn-success btn-outline-rounded green"> Planning <span style="margin-left:10px;"></span></a>
+                                <a ui-sref="app.inscription" class="btn btn-success btn-outline-rounded green"> Inscription <span style="margin-left:10px;"></span></a>
+                            </p>
                     </div>
 
-                    <div class="row tab-pane fade in active" ng-if="$ctrl.tab==='ptits'" id="doner">
+                    <div class="row tab-pane fade in active" ng-show="$ctrl.tab==='ptits'" id="doner">
                         <img src="/img/circulartabs/photogympetit.png" class="hidden-xs col-md-3" id="squall"/>
-                        <p class="narrow text-justify col-md-9">
-                            Dès 3 ans à travers différents parcours les plus jeunes acquièrent les bases gymniques : ramper, courir, sauter, rouler, tourner, rebondir et s’équilibrer. L’encadrement est assuré par un professeur diplômé, accompagné de gymnastes du club. L’accessibilité à la pratique sportive
-                            dès le plus jeune âge nous tient particulièrement à cœur car les enfants sont en plein éveil mental et physique, ils apprennent à situer leur corps dans l’espace et apprennent à vivre en société hors cadre scolaire ou familiale.</br>
-                        </br>
-                        <a ui-sref="app.planning" class="btn btn-success btn-outline-rounded green"> Planning <span style="margin-left:10px;"></span></a>
-                        <a ui-sref="app.inscription" class="btn btn-success btn-outline-rounded green" > Inscription <span style="margin-left:10px;"></span></a>
-                        </p>
+                        <p class="narrow text-justify col-md-9" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.paraptit">{{$ctrl.ngModel.paraptit}}</p>
+
+                            
+                            <p class="narrow text-justify">
+                                <a ui-sref="app.planning" class="btn btn-success btn-outline-rounded green"> Planning <span style="margin-left:10px;"></span></a>
+                                <a ui-sref="app.inscription" class="btn btn-success btn-outline-rounded green"> Inscription <span style="margin-left:10px;"></span></a>
+                            </p>
                     </div>
 
                     <div class="clearfix"></div>
