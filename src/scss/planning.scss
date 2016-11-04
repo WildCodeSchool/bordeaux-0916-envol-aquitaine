@@ -1,11 +1,25 @@
+@media screen and (min-width: 0px) and (max-width: 700px)  {
+    .buttonplanning {
+
+    }
+  }
+
+  @media screen and (min-width: 701px) and (max-width: 1024px) {
+    .buttonplanning {
+        height: 70px;
+    }
+  }
+
 #planning {
+
+
     h2.planning {
         color: black;
     }
 
     button {
         width: 150px;
-        height: 70px;
+
         font: 16px Arial;
         box-shadow: 1px 1px 3px #271717;
         background-color: #B71C1C;
