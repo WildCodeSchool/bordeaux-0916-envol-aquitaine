@@ -1,16 +1,15 @@
 # Envol-Aquitaine
 
-[![Licence](https://img.shields.io/badge/licence-MIT-blue.svg?maxAge=2592000)](https://github.com/jbehuet/tiny-mean-cms/blob/master/LICENCE) [![Release](https://img.shields.io/github/release/jbehuet/tiny-mean-cms.svg?maxAge=2592000)](https://github.com/jbehuet/tiny-mean-cms/releases)
-[![GitHub forks](https://img.shields.io/github/forks/jbehuet/tiny-mean-cms.svg)](https://github.com/jbehuet/tiny-mean-cms/network) [![GitHub issues](https://img.shields.io/github/issues/jbehuet/tiny-mean-cms.svg)](https://github.com/jbehuet/tiny-mean-cms/issues)
+
 
 CMS Project with [MEAN stack](http://mean.io/#!/)
 
 ### Previews
 | Home   |      Edition      | Dashboard |
 |:----------:|:-------------:|:------:|
-| <img src="http://jbehuet.fr/files/screens/mean-starter/001.png" width="400px" />   |  <img src="http://jbehuet.fr/files/screens/mean-starter/002.png" width="400px" />   | <img src="http://jbehuet.fr/files/screens/mean-starter/003.png" width="400px" /> |
+| <img src="src/static/img/Capturehome1.png" width="400px" />   |  <img src="src/static/img/Captureedition.png" width="400px" />   | <img src="src/static/img/Capturedashboard.png" width="400px" /> |
 
-[Show demo](http://tiny-mean-cms.herokuapp.com/#/)
+[Show demo](http://envol-aquitaine.wildcodeschool.fr/#!/)
 
 ### Prerequisites
 * [NodeJS](https://nodejs.org/en/)
