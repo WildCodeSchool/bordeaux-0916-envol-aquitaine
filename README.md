@@ -7,7 +7,7 @@ CMS Project with [MEAN stack](http://mean.io/#!/)
 ### Previews
 | Home   |      Edition      | Dashboard |
 |:----------:|:-------------:|:------:|
-| <img src="http://jbehuet.fr/files/screens/mean-starter/001.png" width="400px" />   |  <img src="http://jbehuet.fr/files/screens/mean-starter/002.png" width="400px" />   | <img src="http://jbehuet.fr/files/screens/mean-starter/003.png" width="400px" /> |
+| <img src="src/static/img/Capturehome1.png" width="400px" />   |  <img src="src/static/img/Captureedition.png" width="400px" />   | <img src="src/static/img/Capturedashboard.png" width="400px" /> |
 
 [Show demo](http://envol-aquitaine.wildcodeschool.fr/#!/)
 
