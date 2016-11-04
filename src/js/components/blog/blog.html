@@ -10,10 +10,9 @@
         </div>
 
         <div class="col-md-6" ng-click="$ctrl.postSelected">
-
             <h5>{{post.title}}</h5>
             <cite>Par {{post.author}}</cite>
-            <p>{{post.body}}</p>
+            <div ng-bind-html="post.content | limitTo:300"></div>
         </div>
     </div>
 
@@ -35,7 +34,7 @@
                 <img class="col-md-12" src="{{$ctrl.postSelected.image}}" ng-if="$ctrl.postSelected.image" />
             </div>
             <div class="row">
-                <p class="col-md-12">{{$ctrl.postSelected.body}}</p>
+                <div  class="col-md-12" ng-bind-html="$ctrl.postSelected.content"></div>
             </div>
         </div>
     </div>
