@@ -1,19 +1,15 @@
+<mininavbar edit-mode="$ctrl.editMode" ng-model="$ctrl.page"></mininavbar>
+
 <div class="container concepts" style="background-color:#F85A59" id="contact">
 <!--<div class="container concepts" style="background-color:#F63233">-->
 <!--<div class="container concepts" style="background-image:url('img/fond-contactpage.jpg')">-->
 
   <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
     <!--<h1 style="color:black;font-weight:normal;margin-top:15px"> Contactez-nous !</h1>-->
-    <h1 style="color:white;font-weight:normal;margin-top:15px"> Contactez-nous !</h1>
-    <!--<p style="color:black;text-align:justify;line-height:30px;padding-bottom:5px;font-weight: bold;">-->
-    <!--<p style="color:white;text-align:justify;line-height:30px;padding-bottom:5px;font-weight: bold;">-->
-    <!--<p style="color:black;text-align:justify;line-height:30px;padding-bottom:5px;font-weight: bold;">
-      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-      voluptatum deleniti atque corrupti quos dolores et quas feugiat. Et harum quidem rerum
-      facilis est et expedita distinctio lorem ipsum
-      dolor sit amet, consectetur adipiscing elit landitiis.
-    </p>-->
-
+    <h1 style="color:black;font-weight:normal;margin-top:15px" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.title"> 
+      {{$ctrl.ngModel.title}}
+      <!-- Contactez-nous ! -->
+    </h1>
     <br>
 
     <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate> 
@@ -84,8 +80,14 @@
       <!-- SUBMIT BUTTON -->
       <div>
         <!--<p type="submit" value="" class="btn btn-contact-red" ng-disabled="userForm.$invalid" ng-click="subitForm()"> Envoyer </p>-->
-        <p type="submit" value="" class="btn" ng-disabled="userForm.$invalid" ng-click="$ctrl.submitForm()" style="margin-left:15px;color:black"> Envoyer </p>
+        <!--<p type="submit" value="" class="btn" ng-disabled="userForm.$invalid" ng-click="$ctrl.submitForm()" style="margin-left:15px;color:black"> Envoyer </p>-->
+
+        <button type="button" class="btn btn-success btn-outline-rounded green" value="" class="btn" ng-disabled="userForm.$invalid" ng-click="$ctrl.submitForm()" style="margin-left:15px"> Envoyer </button>
+
       </div>
+
+      
+
 
     </form>
     
@@ -95,32 +97,38 @@
   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
     <div class="panel panel-default" style="margin-top:20px">
       <div class="panel-heading">
-          <h3 class="panel-title">Permanence</h3>
+          <h3 class="panel-title" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.perm">
+            {{$ctrl.ngModel.perm}}
+            <!-- Permanence -->
+          </h3>
       </div>
       <div class="panel-body">
-        <!--<p style="text-align:justify;margin-bottom:15px;">
-          Lorem ipsum dolor sit amet, no cetero voluptatum est, audire sensibus maiestatis vis et.
-          Vitae audire prodesset an his. Nulla ubique omnesque in sit.
-        </p>-->
 
-        <span> <strong class="color-contact-primary"> Mercredi : </strong> de 14h à 19h</span> 
-
-        <br><br>
+        <span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.permjour"> 
+        <!-- <strong class="color-contact-primary #bc5e43"> 
+          < Mercredi :  de 14h à 19h
+          </strong> -->
+          {{$ctrl.ngModel.permjour}}
+        </span> 
 
         <!--<i class="fa fa-phone" style="color:black">  </i>-->
-        <i class="fa fa-phone color-contact-primary">  </i>
-        <span style="margin-left:20px;font-size:13px"> 05 56 91 89 48 </span>
-
-        <br><br>
+        <i class="fa fa-phone color-contact-primary text-center">  </i>
+        <span style="margin-left:20px;font-size:13px" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.phone">{{$ctrl.ngModel.phone}}
+          <!-- 05 56 91 89 48 --> 
+        </span>
 
         <!--<i class="fa fa-envelope" style="color:black">  </i>-->
         <i class="fa fa-envelope color-contact-primary">  </i>
-        <span style="margin-left:20px;font-size:13px">envol.d.aquitaine@gmail.com</span>
-
-        <br><br>
+        <span style="margin-left:20px;font-size:13px" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.email">
+          {{$ctrl.ngModel.email}}
+          <!-- envol.d.aquitaine@gmail.com -->
+        </span>
 
         <i class="fa fa-facebook color-contact-primary">  </i>
-        <span style="margin-left:20px;font-size:13px">facebook.com/envolaquitaine</span>
+        <span style="margin-left:20px;font-size:13px" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.facebook">
+          {{$ctrl.ngModel.facebook}}
+          <!-- facebook.com/envolaquitaine -->
+        </span>
 
       </div>
     </div>
@@ -128,16 +136,59 @@
 
     <div class="panel panel-default">
       <div class="panel-heading">
-          <h3 class="panel-title">Envol d'Aquitaine</h3>
+          <h3 class="panel-title" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.panel1">
+            {{$ctrl.ngModel.panel1}}
+            <!-- Envol Aquitaine -->
+          </h3>
       </div>
 
       <div class="panel-body">
-        <strong class="color-contact-primary">Association sportive</strong><br>
-        <span>4bis Rue des Douves <br> 33000 Bordeaux</span>
-        <br> <br>
-        <span> <strong class="color-contact-primary">Siret : </strong> 377 581 533 00025</span> <br><br>
-        <span> <strong class="color-contact-primary">Agr : </strong> 33 S 83 48 B.</span> <br><br>
-        <span> <strong class="color-contact-primary">DRDJS : </strong> 33 58 34 83 </span> <br>
+        <span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.panel2">
+          <strong class="color-contact-primary">
+          {{$ctrl.ngModel.panel2}}
+          <!-- Association sportive -->
+          </strong>
+        </span>
+ 
+
+        <span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.panel3">
+          {{$ctrl.ngModel.panel3}}
+          <!-- 4bis Rue des Douves 
+          33000 Bordeaux --> 
+        </span>
+
+        <!-- <br> <br> -->
+
+        <!--<span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.panel4"> 
+        <strong class="color-contact-primary">
+          {{$ctrl.ngModel.panel4}}-->
+          <!-- Siret : 
+        </strong> 
+          377 581 533 00025 -->
+        <!--</span> -->
+
+        <!-- <br> <br> -->
+
+        <span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.panel5"> 
+        <strong class="color-contact-primary">
+          {{$ctrl.ngModel.panel5}}
+          <!-- Agr : --> 
+        </strong> 
+          <!-- 33 S 83 48 B. -->
+        </span> 
+
+        <!-- <br> <br> -->
+
+        <span inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.panel6">
+         <strong class="color-contact-primary">
+          {{$ctrl.ngModel.panel1}}
+          <!-- DRDJS : -->
+         </strong> 
+          <!-- 33 58 34 83 -->
+        </span> 
+         
+         <!-- <br> -->
+
       </div>
     </div>
 
@@ -155,12 +206,19 @@
 <!--<div class="container concepts" style="margin-top:-21px;background-color:white">-->
     <div class="col-xs-12 col-md-12 col-md-12 col-lg-12" style="margin-top:40px">
       <!--<h1 style="color:black;font-weight:normal;margin-top:15px"> Se rendre au Gymnase ...</h1>-->
-      <h1 style="color:white;font-weight:normal;margin-top:15px"> Se rendre au Gymnase ...</h1>
+      <h1 style="color:black;font-weight:normal;margin-top:15px" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.titre2"> 
+      {{$ctrl.ngModel.titre2}}
+      <!-- Se rendre au Gymnase ... -->
+      </h1>
       <!--<p style="color:white;text-align:justify;line-height:30px;padding-bottom:5px;font-weight: bold;">-->
-      <p style="color:black;padding-left:15px;line-height:30px;padding-bottom:5px;font-weight: bold;">
-        * Ligne de bus : 15 / 20/ 47 / 11 / 1 <br>
-        * Arrêts de tram : Tram C  Saint Michel / Tram B  Victoire <br>
+
+      <p style="color:white;padding-left:15px;line-height:30px;padding-bottom:5px;font-weight: bold;" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.transport">
+        {{$ctrl.ngModel.transport}}
+        <!--
+        * Ligne <d></d>e bus : 15 / 20/ 47 / 11 / 1
+        * Arrêts de tram : Tram C  Saint Michel / Tram B  Victoire
         * Station VCub : Rue des Menuts et à l’angle de la place des Capucins et du Cours de la Marne
+        -->
       </p>
     </div>
 
