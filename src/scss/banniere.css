@@ -1,11 +1,10 @@
 ul.social-icons li a {
-    border: 1px solid rgba(0, 0, 0, 0.03);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
     display: block;
     width: 36px;
     height: 36px;
     text-indent: -9999px;
-    background-position: 0px -55px;
+    background-position: 8px -38px;
     background-repeat: no-repeat;
     padding-bottom: 1px;
     opacity: 1;
@@ -14,8 +13,7 @@ ul.social-icons li a {
 
 [class^="social-"] a,
 [class*=" social-"] a {
-    background-position: 8px -31px !important;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 ul.social-icons {
@@ -28,6 +26,13 @@ ul.social-icons {
 .social-facebook a {
     background: url(/img/facebook.png);
 }
-.social-facebook a:hover {
-background-color: #f23232 !important;
+
+
+#youtube {
+background: url(/img/logo_youtube.png);
+background-repeat: no-repeat;
+width: 38px;
+height: 38px;
+background-position-x: -1px;
+margin-top: 15px;
 }

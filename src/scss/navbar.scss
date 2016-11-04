@@ -51,3 +51,12 @@ button.navbar-toggle:hover > .icon-bar {
 .navbar-default .navbar-toggle {
     border-color: $white;
 }
+
+#bs-navbar {
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #f23232;
+}
+}

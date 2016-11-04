@@ -1,7 +1,7 @@
 
 @keyframes slidy {
 0% { left: 0%; }
-100% { left: -300%; }
+100% { left: -310%; }
 }
 
 /*body { margin: 0; } */
@@ -24,7 +24,7 @@ div#slider figure{
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
 }
 
 figure{
@@ -54,8 +54,8 @@ div#slider {
 
 .prez-container h4{
   padding-left:10px;
-  padding-top:0px;
-  margin-bottom: 0px;
+  /*padding-top:10px*/
+  padding:5px;
   color:black;
   font-weight: bold;
 }
