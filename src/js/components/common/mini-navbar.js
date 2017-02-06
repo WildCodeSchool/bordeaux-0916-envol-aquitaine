@@ -6,7 +6,7 @@
             ngModel: '='
         },
         templateUrl: 'js/components/common/mini-navbar.html',
-        controller: function(PageService, UserService) {
+        controller: ['PageService', 'UserService', function(PageService, UserService) {
             angular.extend(this, {
                 initialData: null,
                 $onInit() {
@@ -34,6 +34,6 @@
                     this.ngModel = this.initialData
                 }
             })
-        }
+        }]
     })
 })(angular.module('app.common'))
