@@ -20,41 +20,39 @@
                     })
                 },
                 edit(post) {
-                    this.selectedPost = post
+                    this.postSelected = post
                 },
                 add() {
-                    this.selectedPost = {
-                        isDraft: true
+                    this.postSelected = {
+                        isDraft: false
                     }
                     this.edit = true
                 },
                 save() {
-                    PostService.save(this.selectedPost).then((res) => {
-                        if (angular.isUndefined(this.selectedPost._id))
-                            this.posts[this.posts.length - 1] = res.data
-                        toastr.success(`${this.selectedPost.title} saved`)
+                    PostService.save(this.postSelected).then((res) => {
+                        if (angular.isUndefined(this.postSelected._id))
+                            this.posts.unshift(res.data)
+                        toastr.success(`${this.postSelected.title} saved`)
+                        this.postSelected = null
+                        this.edit = false
                     }).catch((err) => {
                         toastr.error(`${err.data}`)
                     })
 
                 },
                 delete(post) {
-                    let idx = this.posts.find((el, idx) => {
-                        if (el._id === post._id)
-                            return idx
-                    })
-                    debugger
-                    // this.posts.splice(idx, 1)
-                    // if (angular.isDefined(post._id)) {
-                    //     PostService.delete(post).then(() => {
-                    //         toastr.success(`${post.title} deleted`)
-                    //         this.selectedPost = null
-                    //     }).catch((err) => {
-                    //         toastr.error(`${err.data}`)
-                    //     })
-                    // } else {
-                    //     this.selectedPost = null
-                    // }
+                    let idx = this.posts.findIndex(el => el._id === post._id)
+                    this.posts.splice(idx, 1)
+                    if (angular.isDefined(post._id)) {
+                        PostService.delete(post).then(() => {
+                            toastr.success(`${post.title} deleted`)
+                            this.postSelected = null
+                        }).catch((err) => {
+                            toastr.error(`${err.data}`)
+                        })
+                    } else {
+                        this.postSelected = null
+                    }
 
                 }
             })

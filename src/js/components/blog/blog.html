@@ -31,7 +31,7 @@
     </div>
 
 
-    <form class="form" ng-if="$ctrl.isAdmin && $ctrl.edit" name="frmPost" ng-submit="$ctrl.save()">
+    <form class="form" ng-if="$ctrl.isAdmin && $ctrl.edit" name="frmPost">
         <div class="form-group">
             <label for="title">Titre:</label>
             <input type="text" class="form-control" id="title" ng-model="$ctrl.postSelected.title" ng-required="true">
@@ -40,14 +40,9 @@
             <label for="textContent">Contenu:</label>
             <text-angular class="form-group" id="textContent" ng-model="$ctrl.postSelected.content" ng-required="true"></text-angular>
         </div>
-        <div class="input-group">
-            <input id="boxDraft" type="checkbox" ng-model="$ctrl.selectedPost.isDraft" />
-            <label for="boxDraft">{{'POSTS_DRAFT' | translate}}</label>
-        </div>
         <div class="form-group">
             <button type="button" class="btn btn-primary" ng-click="$ctrl.edit = !$ctrl.edit">Annuler</button>
-            <button type="button" class="btn btn-primary" ng-click="$ctrl.delete($ctrl.selectedPost)" name="button">Supprimer</button>
-            <button type="button" class="btn btn-primary" type="submit" name="button">Sauvegarder</button>
+            <button type="button" class="btn btn-primary" type="submit" name="button" ng-click="$ctrl.save()">Sauvegarder</button>
         </div>
     </form>
 
@@ -58,6 +53,7 @@
         </div>
         <div class="col-md-6">
             <button type="button" class="btn btn-primary pull-right" ng-click="$ctrl.add()">Ecrire un article</button>
+            <button type="button" ng-if="$ctrl.postSelected" class="btn btn-primary pull-right" ng-click="$ctrl.delete($ctrl.postSelected)" name="button">Supprimer</button>
             <button type="button" ng-if="$ctrl.postSelected" class="btn btn-primary pull-right" ng-click="$ctrl.edit = !$ctrl.edit">Editer article</button>
         </div>
     </div>
