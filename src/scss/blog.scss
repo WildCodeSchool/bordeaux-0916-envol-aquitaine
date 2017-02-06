@@ -1,6 +1,10 @@
 @import 'colors';
 
 #blog {
+  .selectedPost,
+  form{
+    margin-bottom: 5em;
+  }
   #bouttonRetour{
     margin-right:5em;
     margin-left: 5em;
@@ -63,12 +67,6 @@
         margin-top: 1em;
     }
 
-    text-angular {
-        button {
-            width: 1em;
-            height: 1em;
-        }
-    }
 
     .row.post {
         margin-bottom: 5em;
@@ -78,14 +76,12 @@
         -webkit-transition: 0.5s linear all;
         transition: 0.5s linear all;
         opacity: 1;
-        padding-bottom: 30px;
         background: #B71C1C;
         color: white;
         cursor: pointer;
 
-        cite {
-            display: inline-block;
-            padding: 10px 0;
+        h2{
+          color:$white
         }
     }
 
@@ -98,9 +94,6 @@
         display: block!important;
     }
 
-    form {
-        width: 100%;
-    }
 
     input,
     textarea {

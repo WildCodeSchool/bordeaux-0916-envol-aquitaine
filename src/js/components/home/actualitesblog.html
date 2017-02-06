@@ -1,45 +1,17 @@
 <div class="card" id="blogbox">
 
     <h4 class="text-center">Actualités Blog <img src="img/tennis_actusblog.png" class="img-responsive" alt=""/></h4>
-    <div class="row">
+    <div class="row" ng-repeat="post in $ctrl.posts | limitTo: 3">
         <div class="col-md-3 text-center">
-            <h1>15</h1>
-            <h3>09</h3>
+            <h1>{{post.createdAt | date:'dd'}}</h1>
+            <h3>{{post.createdAt | date:'MM'}}</h3>
         </div>
         <div class="col-md-9">
-            <h5>Title</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a>Lire la suite</a>
+            <h5>{{post.title}}</h5>
+            {{post.content}}
+            <hr>
+            <a ui-sref="app.blog">Lire la suite</a>
         </div>
     </div>
 
-
-
-<div class="row">
-    <div class="col-md-3 text-center">
-        <h1>15</h1>
-        <h3>09</h3>
-    </div>
-    <div class="col-md-9">
-        <h5>Title</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a>Lire la suite</a>
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="col-md-3 text-center">
-        <h1>15</h1>
-        <h3>09</h3>
-    </div>
-    <div class="col-md-9">
-        <h5>Title</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a>Lire la suite</a>
-    </div>
-</div>
 </div>
