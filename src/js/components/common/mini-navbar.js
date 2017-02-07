@@ -16,6 +16,7 @@
 
                     })
 
+                    debugger
                     PageService.get(this.ngModel.name).then((res) => {
                         if (res.data.content)
                             res.data.content = JSON.parse(res.data.content)

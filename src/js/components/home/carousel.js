@@ -9,10 +9,7 @@
         templateUrl: 'js/components/home/carousel.html',
         controller: function() {
             angular.extend(this, {
-                page: {
-                    name: 'contactform',
-                    content: {}
-                }
+                
             })
         }
 
